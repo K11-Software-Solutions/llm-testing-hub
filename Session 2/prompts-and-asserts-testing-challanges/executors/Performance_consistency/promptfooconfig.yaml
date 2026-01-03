@@ -1,0 +1,10 @@
+description: "Performance_consistency"
+
+prompts:
+  - file://../../prompts/prompt_Performance_consistency.txt
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/test_Performance_consistency.yaml

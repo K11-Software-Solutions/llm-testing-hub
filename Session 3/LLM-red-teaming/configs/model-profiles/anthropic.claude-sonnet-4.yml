@@ -1,0 +1,3 @@
+model: anthropic:messages:claude-sonnet-4-20250514
+temperature: 0.2
+max_tokens: 512

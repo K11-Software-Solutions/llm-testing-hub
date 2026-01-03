@@ -1,0 +1,241 @@
+{
+  "evalId": "eval-bzY-2026-01-01T04:45:04",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-01-01T04:45:04.692Z",
+    "prompts": [
+      {
+        "raw": "Summarize the following text:\n\n{{long_text}}",
+        "label": "Summarize the following text:\n\n{{long_text}}",
+        "id": "c69959a0273dd8e6c0a0ab158aa454111eabe2b2db5592df7ef799c8192ced10",
+        "provider": "openai:gpt-4o",
+        "metrics": {
+          "score": 2,
+          "testPassCount": 2,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 0,
+          "assertFailCount": 0,
+          "totalLatencyMs": 53,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 110,
+            "total": 110,
+            "numRequests": 2,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.0006200000000000001
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.00032250000000000003,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          }
+        },
+        "id": "a93efd31-b008-4eaa-a05b-86eff740b1f6",
+        "latencyMs": 24,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Summarize the following text:\n\nThis is a very long text input to test the context window limits of the model. Add more text here as needed for your test.",
+          "label": "Summarize the following text:\n\n{{long_text}}"
+        },
+        "promptId": "c69959a0273dd8e6c0a0ab158aa454111eabe2b2db5592df7ef799c8192ced10",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "The text is a test of the model's context window limits, encouraging additional text as needed for the experiment.",
+          "tokenUsage": {
+            "cached": 63,
+            "total": 63
+          },
+          "cached": true,
+          "latencyMs": 781,
+          "finishReason": "stop",
+          "cost": 0.00032250000000000003,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "long_text": "This is a very long text input to test the context window limits of the model. Add more text here as needed for your test."
+          },
+          "assert": [],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "long_text": "This is a very long text input to test the context window limits of the model. Add more text here as needed for your test."
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0002975,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          }
+        },
+        "id": "5d0504b9-5fec-4c1a-9c3a-2f39de2f5676",
+        "latencyMs": 29,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Summarize the following text:\n\nAnother long text example to test context window.",
+          "label": "Summarize the following text:\n\n{{long_text}}"
+        },
+        "promptId": "c69959a0273dd8e6c0a0ab158aa454111eabe2b2db5592df7ef799c8192ced10",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "It seems like you've referenced a document without providing any content from it. Could you please provide the text you'd like summarized?",
+          "tokenUsage": {
+            "cached": 47,
+            "total": 47
+          },
+          "cached": true,
+          "latencyMs": 973,
+          "finishReason": "stop",
+          "cost": 0.0002975,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "long_text": "Another long text example to test context window."
+          },
+          "assert": [],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "long_text": "Another long text example to test context window."
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 2,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 110,
+        "total": 110,
+        "numRequests": 2,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      },
+      "durationMs": 58
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "Context window limit - summarization",
+    "prompts": [
+      "Summarize the following text:\n\n{{long_text}}"
+    ],
+    "providers": [
+      "openai:gpt-4o"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "long_text": [
+            "This is a very long text input to test the context window limits of the model. Add more text here as needed for your test.",
+            "Another long text example to test context window."
+          ]
+        }
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "outputPath": [
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Context_window_limits_results.json",
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Context_window_limits_results.html"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.120.8",
+    "nodeVersion": "v22.18.0",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2026-01-01T04:45:04.803Z",
+    "evaluationCreatedAt": "2026-01-01T04:45:04.692Z"
+  }
+}

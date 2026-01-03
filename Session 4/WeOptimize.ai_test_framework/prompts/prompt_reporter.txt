@@ -1,0 +1,2 @@
+  - "Who reported ticket {{ticket}}?"
+  - "Give me the reporter of issue {{ticket}}."

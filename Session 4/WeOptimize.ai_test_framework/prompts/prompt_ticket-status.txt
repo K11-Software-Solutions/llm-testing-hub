@@ -1,0 +1,4 @@
+  - 'What is the status of the ticket {{ticket}}'
+  - 'Summarize the status of {{ticket}} in under 10 words.'
+  - 'What’s the current workflow stage of {{ticket}}?'
+  - 'Tell me the latest update on {{ticket}}'

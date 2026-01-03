@@ -1,0 +1,17 @@
+description: Context window limit - summarization
+
+prompts:
+  - "Summarize the following text:\n\n{{long_text}}"
+
+providers:
+  - openai:gpt-4o
+
+tests:
+  - vars:
+      long_text:
+        - "This is a very long text input to test the context window limits of the model. Add more text here as needed for your test."
+        - "Another long text example to test context window."
+
+assertions:
+  - type: contains
+    value: "summary"

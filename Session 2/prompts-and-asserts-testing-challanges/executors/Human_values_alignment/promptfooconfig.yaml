@@ -1,0 +1,10 @@
+description: "Human_values_alignment"
+
+prompts:
+  - file://../../prompts/prompt_Human_values_alignment.txt
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/test_Human_values_alignment.yaml

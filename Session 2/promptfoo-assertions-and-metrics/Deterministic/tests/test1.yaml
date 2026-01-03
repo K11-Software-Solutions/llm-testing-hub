@@ -1,0 +1,3 @@
+  - assert:
+      - type: contains          # pass if substring present
+        value: "Bonjour"

@@ -1,0 +1,10 @@
+description: "Bias_and_Fairness"
+
+prompts:
+  - file://../../prompts/prompt_Bias_and_Fairness.txt
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/test_Bias_and_Fairness.yaml

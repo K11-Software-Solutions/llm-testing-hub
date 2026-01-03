@@ -1,0 +1,3 @@
+  - "Who is the assignee of ticket {{ticket}}?"
+  - "Is ticket {{ticket}} currently assigned or unassigned?"
+

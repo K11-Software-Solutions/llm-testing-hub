@@ -1,0 +1,24 @@
+description: Hallucination / factual pressure - force reference usage
+
+providers:
+  - openai:gpt-4o
+
+prompts:
+  - "Answer the question using ONLY this reference text.\n\nReference: {{ground_truth}}\n\nQuestion: {{question}}\n\nAnswer:"
+
+tests:
+  - name: Capital of France
+    vars:
+      question: "What is the capital of France?"
+      ground_truth: "The capital of France is Paris."
+  - name: Largest planet
+    vars:
+      question: "What is the largest planet?"
+      ground_truth: "The largest planet is Jupiter."
+
+assertions:
+  # Option A: assert the exact key fact appears
+  - type: contains
+    value: "Paris"
+  - type: contains
+    value: "Jupiter"

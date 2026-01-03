@@ -1,0 +1,34 @@
+  
+  # --- Selenium 4 ---
+  - vars:
+     topic: Selenium 4 for browser automation
+    assert:
+      - type: contains
+        value: W3C
+      - type: contains-any
+        value: ["Selenium Grid", "WebDriver"]
+      - type: not-contains
+        value: desktop
+      - type: not-contains
+        value: mobile
+ 
+
+  # --- Playwright ---
+  - vars:
+     topic: playwright for end-to-end testing
+    assert:
+      - type: contains
+        value: TypeScript
+      - type: contains-any
+        value: ["end-to-end", "automation"]
+   
+
+  # --- REST Assured ---
+  - vars:
+     topic: rest assured java library
+    assert:
+      - type: contains
+        value: HTTP
+      - type: regex
+        value: "\\bJava\\b"
+

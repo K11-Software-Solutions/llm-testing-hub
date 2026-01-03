@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>FAQ bot regression tests</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-wrap;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>ground_truth</th>
+        
+        <th>product</th>
+        
+        <th>question</th>
+        
+        <th>[openai:gpt-4o-mini] You are a concise support bot.
+Answer clearly and only from the provided reference.
+Reference: {{ground_truth}}
+Q: {{product}} — {{question}}
+A:
+</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="Go to Contacts → Export → choose CSV or XLSX.">Go to Contacts → Export → choose CSV or XLSX.</td>
+          
+          <td data-content="AcmeCRM">AcmeCRM</td>
+          
+          <td data-content="How do I export contacts?">How do I export contacts?</td>
+          
+          <td data-content="[PASS] (1.00)
+
+To export contacts in AcmeCRM, go to Contacts → Export → choose CSV or XLSX.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+To export contacts in AcmeCRM, go to Contacts → Export → choose CSV or XLSX.
+
+Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="Yes. When creating a payment, select Recurring and set frequency.">Yes. When creating a payment, select Recurring and set frequency.</td>
+          
+          <td data-content="PayMaster">PayMaster</td>
+          
+          <td data-content="Can I set up recurring payments?">Can I set up recurring payments?</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Yes, you can set up recurring payments by selecting Recurring and setting the frequency when creating a payment.
+
+Pass Reason: All assertions passed">[PASS] (1.00)
+
+Yes, you can set up recurring payments by selecting Recurring and setting the frequency when creating a payment.
+
+Pass Reason: All assertions passed</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

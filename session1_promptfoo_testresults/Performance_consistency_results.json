@@ -1,0 +1,325 @@
+{
+  "evalId": "eval-hHd-2026-01-01T04:45:15",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-01-01T04:45:15.342Z",
+    "prompts": [
+      {
+        "raw": "Explain the main features of {{product}} in 5-7 bullets.",
+        "label": "Explain the main features of {{product}} in 5-7 bullets.",
+        "id": "bb1892f1ca9e69368a5ec42d00ebc7e21ac87023ecc3acd20449595ae433692b",
+        "provider": "openai:gpt-4o",
+        "metrics": {
+          "score": 2,
+          "testPassCount": 2,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 2,
+          "assertFailCount": 0,
+          "totalLatencyMs": 51,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 545,
+            "total": 545,
+            "numRequests": 2,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 1277,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 1277,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.005135000000000001
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.0022225,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 599,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 599,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Score 1 if it lists at least 5 distinct features/capabilities clearly.\nScore 0 otherwise.\n",
+                "threshold": 1
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The output clearly lists 7 distinct capabilities (conversational ability, versatility, contextual understanding, language support, adaptable tone/style, scalability, continuous improvement).",
+              "tokensUsed": {
+                "total": 599,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 599,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are grading output according to a user-specified rubric. If the statement in the rubric is true, then the output passes the test. You respond with a JSON object with this structure: {reason: string, pass: boolean, score: number}\\n\\nExamples:\\n\\n<Output>Hello world</Output>\\n<Rubric>Content contains a greeting</Rubric>\\n{\\\"reason\\\": \\\"the content contains the word 'Hello'\\\", \\\"pass\\\": true, \\\"score\\\": 1.0}\\n\\n<Output>Avast ye swabs, repel the invaders!</Output>\\n<Rubric>Does not speak like a pirate</Rubric>\\n{\\\"reason\\\": \\\"'avast ye' is a common pirate term\\\", \\\"pass\\\": false, \\\"score\\\": 0.0}\"},{\"role\":\"user\",\"content\":\"<Output>\\n- **Conversational Ability**: ChatGPT is designed to engage in natural language conversations and can understand and generate human-like text based on the input it receives.\\n\\n- **Versatility**: It can handle a wide range of topics and tasks, from providing information and answering questions to creative writing and brainstorming ideas.\\n\\n- **Contextual Understanding**: The model can maintain context over multiple turns of conversation, allowing for more coherent and relevant interactions.\\n\\n- **Language Support**: ChatGPT is capable of understanding and generating text in multiple languages, though its proficiency varies depending on language complexity and available training data.\\n\\n- **Adaptable Tone and Style**: It can adjust its tone and style to suit different contexts and audiences, whether it be formal, conversational, or even humorous.\\n\\n- **Scalability**: Designed for high scalability, it can be deployed in various applications, ranging from customer support to educational tools and personal assistants.\\n\\n- **Continuous Improvement**: The underlying model is regularly updated and fine-tuned based on user feedback and new research, enhancing its performance and capabilities over time.\\n</Output>\\n<Rubric>\\nScore 1 if it lists at least 5 distinct features/capabilities clearly.\\nScore 0 otherwise.\\n\\n</Rubric>\"}]"
+              }
+            }
+          ]
+        },
+        "id": "dbfea388-9312-48b3-8a24-7a6f650c3b66",
+        "latencyMs": 23,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Explain the main features of ChatGPT in 5-7 bullets.",
+          "label": "Explain the main features of {{product}} in 5-7 bullets."
+        },
+        "promptId": "bb1892f1ca9e69368a5ec42d00ebc7e21ac87023ecc3acd20449595ae433692b",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "- **Conversational Ability**: ChatGPT is designed to engage in natural language conversations and can understand and generate human-like text based on the input it receives.\n\n- **Versatility**: It can handle a wide range of topics and tasks, from providing information and answering questions to creative writing and brainstorming ideas.\n\n- **Contextual Understanding**: The model can maintain context over multiple turns of conversation, allowing for more coherent and relevant interactions.\n\n- **Language Support**: ChatGPT is capable of understanding and generating text in multiple languages, though its proficiency varies depending on language complexity and available training data.\n\n- **Adaptable Tone and Style**: It can adjust its tone and style to suit different contexts and audiences, whether it be formal, conversational, or even humorous.\n\n- **Scalability**: Designed for high scalability, it can be deployed in various applications, ranging from customer support to educational tools and personal assistants.\n\n- **Continuous Improvement**: The underlying model is regularly updated and fine-tuned based on user feedback and new research, enhancing its performance and capabilities over time.",
+          "tokenUsage": {
+            "cached": 238,
+            "total": 238
+          },
+          "cached": true,
+          "latencyMs": 2642,
+          "finishReason": "stop",
+          "cost": 0.0022225,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "product": "ChatGPT"
+          },
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Score 1 if it lists at least 5 distinct features/capabilities clearly.\nScore 0 otherwise.\n",
+              "threshold": 1
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "product": "ChatGPT"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0029125,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 678,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 678,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Score 1 if it lists at least 5 distinct features/capabilities clearly.\nScore 0 otherwise.\n",
+                "threshold": 1
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The output lists 7 distinct features/capabilities clearly (e.g., context-aware suggestions, multi-language support, autocomplete/snippets, IDE integration, training on open source, adaptive learning, debugging aid).",
+              "tokensUsed": {
+                "total": 678,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 678,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are grading output according to a user-specified rubric. If the statement in the rubric is true, then the output passes the test. You respond with a JSON object with this structure: {reason: string, pass: boolean, score: number}\\n\\nExamples:\\n\\n<Output>Hello world</Output>\\n<Rubric>Content contains a greeting</Rubric>\\n{\\\"reason\\\": \\\"the content contains the word 'Hello'\\\", \\\"pass\\\": true, \\\"score\\\": 1.0}\\n\\n<Output>Avast ye swabs, repel the invaders!</Output>\\n<Rubric>Does not speak like a pirate</Rubric>\\n{\\\"reason\\\": \\\"'avast ye' is a common pirate term\\\", \\\"pass\\\": false, \\\"score\\\": 0.0}\"},{\"role\":\"user\",\"content\":\"<Output>\\nCertainly! Here are the main features of Copilot:\\n\\n1. **Context-Aware Code Suggestions**: Copilot provides real-time code suggestions by analyzing the context of your project and the surrounding code, helping you to write more efficient and accurate code.\\n\\n2. **Support for Multiple Languages**: Copilot is versatile, supporting a wide range of programming languages including Python, JavaScript, TypeScript, Ruby, and more, making it a valuable tool for developers with diverse coding needs.\\n\\n3. **Auto-completion and Snippets**: It can generate longer code snippets or entire functions based on short prompts or comments, saving time on repetitive coding tasks.\\n\\n4. **Integration with IDEs**: Copilot is integrated seamlessly with popular Integrated Development Environments (IDEs) like Visual Studio Code, which facilitates an efficient workflow without having to switch tools.\\n\\n5. **Learning from Open Source**: Trained on a vast amount of open-source code, Copilot is equipped with a comprehensive understanding of coding patterns and best practices, allowing it to generate high-quality code.\\n\\n6. **Adaptive Learning**: It continuously improves and adapts to your coding style over time, becoming more aligned with your preferences and the specific intricacies of your projects.\\n\\n7. **Debugging and Error Checking**: While not primarily a debugging tool, Copilot can aid in identifying potential issues and suggest corrections or optimizations, thereby enhancing code reliability.\\n</Output>\\n<Rubric>\\nScore 1 if it lists at least 5 distinct features/capabilities clearly.\\nScore 0 otherwise.\\n\\n</Rubric>\"}]"
+              }
+            }
+          ]
+        },
+        "id": "4a1bc849-2eb7-46ba-98fa-cf0f65db4b88",
+        "latencyMs": 28,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Explain the main features of Copilot in 5-7 bullets.",
+          "label": "Explain the main features of {{product}} in 5-7 bullets."
+        },
+        "promptId": "bb1892f1ca9e69368a5ec42d00ebc7e21ac87023ecc3acd20449595ae433692b",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "Certainly! Here are the main features of Copilot:\n\n1. **Context-Aware Code Suggestions**: Copilot provides real-time code suggestions by analyzing the context of your project and the surrounding code, helping you to write more efficient and accurate code.\n\n2. **Support for Multiple Languages**: Copilot is versatile, supporting a wide range of programming languages including Python, JavaScript, TypeScript, Ruby, and more, making it a valuable tool for developers with diverse coding needs.\n\n3. **Auto-completion and Snippets**: It can generate longer code snippets or entire functions based on short prompts or comments, saving time on repetitive coding tasks.\n\n4. **Integration with IDEs**: Copilot is integrated seamlessly with popular Integrated Development Environments (IDEs) like Visual Studio Code, which facilitates an efficient workflow without having to switch tools.\n\n5. **Learning from Open Source**: Trained on a vast amount of open-source code, Copilot is equipped with a comprehensive understanding of coding patterns and best practices, allowing it to generate high-quality code.\n\n6. **Adaptive Learning**: It continuously improves and adapts to your coding style over time, becoming more aligned with your preferences and the specific intricacies of your projects.\n\n7. **Debugging and Error Checking**: While not primarily a debugging tool, Copilot can aid in identifying potential issues and suggest corrections or optimizations, thereby enhancing code reliability.",
+          "tokenUsage": {
+            "cached": 307,
+            "total": 307
+          },
+          "cached": true,
+          "latencyMs": 2638,
+          "finishReason": "stop",
+          "cost": 0.0029125,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "product": "Copilot"
+          },
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Score 1 if it lists at least 5 distinct features/capabilities clearly.\nScore 0 otherwise.\n",
+              "threshold": 1
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "product": "Copilot"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 2,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 545,
+        "total": 545,
+        "numRequests": 2,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 1277,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 1277,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      },
+      "durationMs": 78
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "Performance Consistency - Feature explanation",
+    "prompts": [
+      "Explain the main features of {{product}} in 5-7 bullets."
+    ],
+    "providers": [
+      "openai:gpt-4o"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "product": "ChatGPT"
+        },
+        "assert": [
+          {
+            "type": "llm-rubric",
+            "value": "Score 1 if it lists at least 5 distinct features/capabilities clearly.\nScore 0 otherwise.\n",
+            "threshold": 1
+          }
+        ]
+      },
+      {
+        "vars": {
+          "product": "Copilot"
+        },
+        "assert": [
+          {
+            "type": "llm-rubric",
+            "value": "Score 1 if it lists at least 5 distinct features/capabilities clearly.\nScore 0 otherwise.\n",
+            "threshold": 1
+          }
+        ]
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "outputPath": [
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Performance_consistency_results.json",
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Performance_consistency_results.html"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.120.8",
+    "nodeVersion": "v22.18.0",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2026-01-01T04:45:15.503Z",
+    "evaluationCreatedAt": "2026-01-01T04:45:15.342Z"
+  }
+}

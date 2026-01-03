@@ -1,0 +1,23 @@
+description: Performance Consistency - Feature explanation
+providers:
+  - openai:gpt-4o
+
+prompts:
+  - "Explain the main features of {{product}} in 5-7 bullets."
+
+tests:
+  - vars: { product: "ChatGPT" }
+    assert:
+      - type: llm-rubric
+        value: |
+          Score 1 if it lists at least 5 distinct features/capabilities clearly.
+          Score 0 otherwise.
+        threshold: 1
+
+  - vars: { product: "Copilot" }
+    assert:
+      - type: llm-rubric
+        value: |
+          Score 1 if it lists at least 5 distinct features/capabilities clearly.
+          Score 0 otherwise.
+        threshold: 1

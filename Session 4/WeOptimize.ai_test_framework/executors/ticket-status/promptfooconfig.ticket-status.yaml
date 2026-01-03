@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "Prompt Foo Excercises"
+
+prompts:
+  - file://../../prompts/prompt_ticket-status.txt
+
+providers:
+  - file://../../providers/providers.yaml
+  
+tests:
+  - file://../../tests/ticket-status_tests.yaml

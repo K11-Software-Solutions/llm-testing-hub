@@ -1,0 +1,27 @@
+description: 'WeOptimize.ai - Testing'
+prompts:
+  - file://prompts.json
+
+providers:
+  - id: 'https://api.weoptimize.ai/chats/promptfoo/session'
+    config:
+      method: 'POST'
+      headers:
+        'Content-Type': 'application/json'
+        'x-api-key': ${X_API_KEY}
+      body: |
+        {
+          "email": "kavita.jadhav1109@gmail.com",
+          "messages": {{prompt}}
+        }
+      transformResponse: 'json.message'
+
+tests:
+  - vars:
+      ticket69: HFLO-69
+    assert:
+      - type: contains
+        value: "HFLO-69"
+      - type: contains
+        value: "iOS Developer"
+ 

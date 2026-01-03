@@ -1,0 +1,209 @@
+  - description: "Reporter for HFLO-56"
+    vars: { ticket: HFLO-56 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if the response clearly names exactly one reporter (a person/name or email),
+          OR explicitly states that reporter information is not available.
+          FAIL if it gives only generic guidance, asks for more info, or lists multiple conflicting reporters.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-55"
+    vars: { ticket: HFLO-55 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if the response clearly names exactly one reporter or explicitly says none/unknown.
+          FAIL if generic guidance or multiple/conflicting reporters.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-54"
+    vars: { ticket: HFLO-54 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided (name/email) or "no reporter info".
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-53"
+    vars: { ticket: HFLO-53 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-52"
+    vars: { ticket: HFLO-52 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-51"
+    vars: { ticket: HFLO-51 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-46"
+    vars: { ticket: HFLO-46 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-45"
+    vars: { ticket: HFLO-45 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-44"
+    vars: { ticket: HFLO-44 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-43"
+    vars: { ticket: HFLO-43 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-42"
+    vars: { ticket: HFLO-42 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-41"
+    vars: { ticket: HFLO-41 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-40"
+    vars: { ticket: HFLO-40 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-39"
+    vars: { ticket: HFLO-39 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-38"
+    vars: { ticket: HFLO-38 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-37"
+    vars: { ticket: HFLO-37 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-36"
+    vars: { ticket: HFLO-36 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-35"
+    vars: { ticket: HFLO-35 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-34"
+    vars: { ticket: HFLO-34 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-33"
+    vars: { ticket: HFLO-33 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-32"
+    vars: { ticket: HFLO-32 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-31"
+    vars: { ticket: HFLO-31 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000
+
+  - description: "Reporter for HFLO-30"
+    vars: { ticket: HFLO-30 }
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if one clear reporter is provided or explicitly none/unknown.
+      - type: latency
+        threshold: 10000

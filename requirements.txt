@@ -1,0 +1,6 @@
+agenta
+openai
+opentelemetry-instrumentation-openai
+
+# For promptfoo CLI (Node.js tool, install separately):
+# npm install -g promptfoo

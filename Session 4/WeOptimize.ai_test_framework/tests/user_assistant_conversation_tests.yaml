@@ -1,0 +1,12 @@
+  - name: 'HFLO-69 responsibilities flow'
+    vars:
+      ticket69: HFLO-69
+    assert:
+      # 1) Must mention role & project
+      - type: contains
+        value: 'iOS Developer'
+      - type: contains
+        value: 'HomeFlo'
+
+
+     

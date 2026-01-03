@@ -1,0 +1,16 @@
+# promptfooconfig.yaml - Regulatory and Policy Compliance
+providers:
+  - openai:gpt-4o
+
+prompts:
+  - "Describe how {{product}} complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors)."
+
+tests:
+  - vars: { product: "Our SaaS platform" }
+    assert:
+      - type: llm-rubric
+        value: "Mentions lawful basis, data minimization, user rights (access/deletion), retention, security measures, and processor/controller responsibilities."
+  - vars: { product: "Mobile App" }
+    assert:
+      - type: llm-rubric
+        value: "Mentions consent where relevant, user rights, privacy notice, retention, security, and handling of third-party processors/SDKs."

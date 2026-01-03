@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hallucination / factual pressure - force reference usage</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-wrap;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>ground_truth</th>
+        
+        <th>question</th>
+        
+        <th>[openai:gpt-4o] Answer the question using ONLY this reference text.
+
+Reference: {{ground_truth}}
+
+Question: {{question}}
+
+Answer:</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="The capital of France is Paris.">The capital of France is Paris.</td>
+          
+          <td data-content="What is the capital of France?">What is the capital of France?</td>
+          
+          <td data-content="[PASS] (1.00)
+
+The capital of France is Paris.
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+The capital of France is Paris.
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="The largest planet is Jupiter.">The largest planet is Jupiter.</td>
+          
+          <td data-content="What is the largest planet?">What is the largest planet?</td>
+          
+          <td data-content="[PASS] (1.00)
+
+Jupiter.
+
+Pass Reason: No assertions">[PASS] (1.00)
+
+Jupiter.
+
+Pass Reason: No assertions</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
