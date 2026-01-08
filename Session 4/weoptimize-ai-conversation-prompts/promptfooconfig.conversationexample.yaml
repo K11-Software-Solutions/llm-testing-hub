@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: "WeOptimize.ai - Jira Conversation Testing (multi-turn)"
+
+# Each conversation is a list of user → assistant turns
+conversations:
+  - description: "Ask about a ticket, then follow up"
+    messages:
+      - role: user
+        content: "What is the priority of HFLO-46?"
+      - role: assistant
+        content: "{{output}}"   # capture model response
+      - role: user
+        content: "Who is assigned to it?"
+      - role: assistant
+        content: "{{output}}"
+
+  - description: "Switch tickets mid-conversation"
+    messages:
+      - role: user
+        content: "Tell me the status of HFLO-54."
+      - role: assistant
+        content: "{{output}}"
+      - role: user
+        content: "Now what about HFLO-56?"
+      - role: assistant
+        content: "{{output}}"
+
+  - description: "Ask priority → status → reporter in sequence"
+    messages:
+      - role: user
+        content: "What is the priority of HFLO-30?"
+      - role: assistant
+        content: "{{output}}"
+      - role: user
+        content: "And its current workflow status?"
+      - role: assistant
+        content: "{{output}}"
+      - role: user
+        content: "Who reported this ticket?"
+      - role: assistant
+        content: "{{output}}"
+
+providers:
+  - file://providers/providers.yaml
+
+tests:
+  - description: "Check clarity of conversation answers"
+    assert:
+      - type: llm-rubric
+        value: |
+          PASS if:
+          - Each assistant turn directly answers the user’s question without hedging.
+          - Priority answers are one of {Highest, High, Medium, Low}.
+          - Status answers are one of {Unresolved, Open, In Progress, Closed, Ready for QA, Blocked}.
+          - Assignee/Reporter answers give exactly one name or “Unassigned”.
+          FAIL if multiple statuses/priorities appear, or if answers are vague/hedged.

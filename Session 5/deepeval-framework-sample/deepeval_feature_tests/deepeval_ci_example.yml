@@ -1,0 +1,38 @@
+# CI/CD Integration Example for DeepEval
+# This is a sample GitHub Actions workflow file (YAML) for running DeepEval tests in CI
+
+name: Run DeepEval Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deepeval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai deepeval
+      - name: Run DeepEval Feature Tests
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/faithfulness_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/relevance_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/toxicity_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/bias_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/custom_metric_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/regression_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/llm_as_judge_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/batch_test.py
+          python Session\ 5/deepeval-framework-sample/deepeval_feature_tests/reporting_test.py

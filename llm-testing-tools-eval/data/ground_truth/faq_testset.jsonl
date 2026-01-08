@@ -1,0 +1,23 @@
+{"product": "AcmeCRM", "question": "How do I export contacts?", "ground_truth": "Go to Contacts → Export → choose CSV or XLSX."}
+{"product": "AcmeCRM", "question": "Does it support SSO with Okta?", "ground_truth": "Yes. In Settings → Security, enable SSO and add your Okta metadata."}
+{"product": "BetaBooks", "question": "How do I invite a collaborator?", "ground_truth": "Open the project, click Share, enter their email and set role."}
+{"product": "AcmeCRM", "question": "Can I import contacts from Excel?", "ground_truth": "Yes. Use Contacts → Import and upload your Excel or CSV file."}
+{"product": "AcmeCRM", "question": "How do I reset my password?", "ground_truth": "Go to Settings → Account → Reset Password and follow the instructions."}
+{"product": "BetaBooks", "question": "Does it support PDF export?", "ground_truth": "Yes. From any book project, click Export → PDF."}
+{"product": "BetaBooks", "question": "Can I track version history of edits?", "ground_truth": "Yes. The History tab shows all edits with timestamps and authors."}
+{"product": "CloudMail", "question": "How do I set up a forwarding rule?", "ground_truth": "Navigate to Settings → Mail Rules → Add Rule → Forward to specify an address."}
+{"product": "CloudMail", "question": "Does it support two-factor authentication?", "ground_truth": "Yes. Go to Settings → Security → Two-Factor Authentication to enable it."}
+{"product": "DataVizPro", "question": "How can I share a dashboard?", "ground_truth": "Open the dashboard, click Share, and choose email or link sharing options."}
+{"product": "DataVizPro", "question": "Can I schedule automatic report emails?", "ground_truth": "Yes. In any report, click Schedule → Email and configure the frequency."}
+{"product": "EduLearn", "question": "How do I enroll in a new course?", "ground_truth": "Browse the Course Catalog, click Enroll on the course page."}
+{"product": "EduLearn", "question": "Can teachers assign quizzes?", "ground_truth": "Yes. Teachers can create and assign quizzes via the Instructor Dashboard."}
+{"product": "HealthTrack", "question": "Does it sync with Apple Health?", "ground_truth": "Yes. Enable sync in Settings → Integrations → Apple Health."}
+{"product": "HealthTrack", "question": "How do I log a workout manually?", "ground_truth": "Go to Workouts → Add Workout and fill in the details manually."}
+{"product": "ShopEZ", "question": "Can I track my order?", "ground_truth": "Yes. In Orders, click Track next to your order to see shipment status."}
+{"product": "ShopEZ", "question": "How do I return an item?", "ground_truth": "Go to Orders → Return Item and follow the guided process."}
+{"product": "TravelGo", "question": "How do I change my flight date?", "ground_truth": "Go to Trips, select your booking, and click Change Flight to pick a new date."}
+{"product": "TravelGo", "question": "Does it support mobile check-in?", "ground_truth": "Yes. Use the TravelGo app → Trips → Check-In to receive your boarding pass."}
+{"product": "PayMaster", "question": "How do I send money internationally?", "ground_truth": "Go to Payments → Send Money → International Transfer and enter details."}
+{"product": "PayMaster", "question": "Can I set up recurring payments?", "ground_truth": "Yes. When creating a payment, select Recurring and set frequency."}
+{"product": "NoteFlow", "question": "How do I create a shared notebook?", "ground_truth": "Click New Notebook, then Share and invite collaborators."}
+{"product": "NoteFlow", "question": "Does it work offline?", "ground_truth": "Yes. Offline mode saves changes locally and syncs once reconnected."}

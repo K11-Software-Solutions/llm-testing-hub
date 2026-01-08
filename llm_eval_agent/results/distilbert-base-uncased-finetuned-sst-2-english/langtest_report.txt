@@ -1,0 +1,4 @@
+,category,test_type,fail_count,pass_count,pass_rate,minimum_pass_rate,pass
+0,bias,replace_to_female_pronouns,0,1,100%,0%,True
+1,fairness,min_gender_f1_score,0,3,100%,0%,True
+2,robustness,add_typo,1,2,67%,0%,True

@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Prompt Foo Excercises</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-line;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>ticket</th>
+        
+        <th>[https://api.weoptimize.ai/chats/promptfoo] ..&#92;..&#92;prompts&#92;prompt_assignee.txt: - &quot;Who is the assignee of ticket {{ticket}}?&quot;
+  - &quot;Is ticket {{ticket}} currently assigned or unassigned?&quot;</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="HFLO-30">HFLO-30</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-31">HFLO-31</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state an assignee&#39;s name nor indicate that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state an assignee&#39;s name nor indicate that the ticket is unassigned.">[FAIL] (0.00)
+
+The response does not state an assignee&#39;s name nor indicate that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state an assignee&#39;s name nor indicate that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-32">HFLO-32</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-33">HFLO-33</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor mention that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-34">HFLO-34</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state a single assignee&#39;s name nor does it say the ticket is unassigned. It only says &#39;Internal server error,&#39; which does not meet the rubric&#39;s criteria.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee&#39;s name nor does it say the ticket is unassigned. It only says &#39;Internal server error,&#39; which does not meet the rubric&#39;s criteria.">[FAIL] (0.00)
+
+The response does not state a single assignee&#39;s name nor does it say the ticket is unassigned. It only says &#39;Internal server error,&#39; which does not meet the rubric&#39;s criteria.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee&#39;s name nor does it say the ticket is unassigned. It only says &#39;Internal server error,&#39; which does not meet the rubric&#39;s criteria.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-35">HFLO-35</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not mention an assignee or state that the ticket is unassigned; it only reports a server error.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee or state that the ticket is unassigned; it only reports a server error.">[FAIL] (0.00)
+
+The response does not mention an assignee or state that the ticket is unassigned; it only reports a server error.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee or state that the ticket is unassigned; it only reports a server error.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-36">HFLO-36</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not mention an assignee or state that the ticket is unassigned; it just states an error occurred.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee or state that the ticket is unassigned; it just states an error occurred.">[FAIL] (0.00)
+
+The response does not mention an assignee or state that the ticket is unassigned; it just states an error occurred.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee or state that the ticket is unassigned; it just states an error occurred.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-37">HFLO-37</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state a single assignee&#39;s name nor mention that the ticket is unassigned. Instead, it returns a generic error message.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee&#39;s name nor mention that the ticket is unassigned. Instead, it returns a generic error message.">[FAIL] (0.00)
+
+The response does not state a single assignee&#39;s name nor mention that the ticket is unassigned. Instead, it returns a generic error message.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee&#39;s name nor mention that the ticket is unassigned. Instead, it returns a generic error message.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-38">HFLO-38</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response only says &#39;Internal server error&#39; and does not state an assignee&#39;s name or the ticket&#39;s unassigned status.
+---
+Internal server error
+
+Fail Reason: The response only says &#39;Internal server error&#39; and does not state an assignee&#39;s name or the ticket&#39;s unassigned status.">[FAIL] (0.00)
+
+The response only says &#39;Internal server error&#39; and does not state an assignee&#39;s name or the ticket&#39;s unassigned status.
+---
+Internal server error
+
+Fail Reason: The response only says &#39;Internal server error&#39; and does not state an assignee&#39;s name or the ticket&#39;s unassigned status.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-39">HFLO-39</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee’s name nor that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-40">HFLO-40</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee’s name nor does it say the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee’s name nor does it say the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee’s name nor does it say the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee’s name nor does it say the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-41">HFLO-41</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-42">HFLO-42</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output &#39;Internal server error&#39; does not state an assignee’s name or that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The output &#39;Internal server error&#39; does not state an assignee’s name or that the ticket is unassigned.">[FAIL] (0.00)
+
+The output &#39;Internal server error&#39; does not state an assignee’s name or that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The output &#39;Internal server error&#39; does not state an assignee’s name or that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-43">HFLO-43</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state a name or that the ticket is unassigned; it only says &#39;Internal server error&#39;.
+---
+Internal server error
+
+Fail Reason: The response does not state a name or that the ticket is unassigned; it only says &#39;Internal server error&#39;.">[FAIL] (0.00)
+
+The response does not state a name or that the ticket is unassigned; it only says &#39;Internal server error&#39;.
+---
+Internal server error
+
+Fail Reason: The response does not state a name or that the ticket is unassigned; it only says &#39;Internal server error&#39;.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-44">HFLO-44</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not mention an assignee nor state that the ticket is unassigned. It only states &#39;Internal server error&#39;, which is unrelated to assignment.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee nor state that the ticket is unassigned. It only states &#39;Internal server error&#39;, which is unrelated to assignment.">[FAIL] (0.00)
+
+The response does not mention an assignee nor state that the ticket is unassigned. It only states &#39;Internal server error&#39;, which is unrelated to assignment.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee nor state that the ticket is unassigned. It only states &#39;Internal server error&#39;, which is unrelated to assignment.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-45">HFLO-45</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not provide an assignee&#39;s name nor does it state that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not provide an assignee&#39;s name nor does it state that the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not provide an assignee&#39;s name nor does it state that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not provide an assignee&#39;s name nor does it state that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-46">HFLO-46</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state a single assignee’s name or mention that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee’s name or mention that the ticket is unassigned.">[FAIL] (0.00)
+
+The response does not state a single assignee’s name or mention that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee’s name or mention that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-51">HFLO-51</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state an assignee&#39;s name nor does it state that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state an assignee&#39;s name nor does it state that the ticket is unassigned.">[FAIL] (0.00)
+
+The response does not state an assignee&#39;s name nor does it state that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state an assignee&#39;s name nor does it state that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-52">HFLO-52</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not mention an assignee&#39;s name or state that the ticket is unassigned. It only reports an internal server error.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee&#39;s name or state that the ticket is unassigned. It only reports an internal server error.">[FAIL] (0.00)
+
+The response does not mention an assignee&#39;s name or state that the ticket is unassigned. It only reports an internal server error.
+---
+Internal server error
+
+Fail Reason: The response does not mention an assignee&#39;s name or state that the ticket is unassigned. It only reports an internal server error.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-53">HFLO-53</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state a single assignee’s name nor does it clarify that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee’s name nor does it clarify that the ticket is unassigned.">[FAIL] (0.00)
+
+The response does not state a single assignee’s name nor does it clarify that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response does not state a single assignee’s name nor does it clarify that the ticket is unassigned.</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-54">HFLO-54</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The output does not mention any assignee&#39;s name nor clarify that the ticket is unassigned. It only states &#39;Internal server error.&#39;
+---
+Internal server error
+
+Fail Reason: The output does not mention any assignee&#39;s name nor clarify that the ticket is unassigned. It only states &#39;Internal server error.&#39;">[FAIL] (0.00)
+
+The output does not mention any assignee&#39;s name nor clarify that the ticket is unassigned. It only states &#39;Internal server error.&#39;
+---
+Internal server error
+
+Fail Reason: The output does not mention any assignee&#39;s name nor clarify that the ticket is unassigned. It only states &#39;Internal server error.&#39;</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-55">HFLO-55</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response does not state an assignee&#39;s name nor does it indicate that the ticket is unassigned. It only reports an &#39;Internal server error.&#39;
+---
+Internal server error
+
+Fail Reason: The response does not state an assignee&#39;s name nor does it indicate that the ticket is unassigned. It only reports an &#39;Internal server error.&#39;">[FAIL] (0.00)
+
+The response does not state an assignee&#39;s name nor does it indicate that the ticket is unassigned. It only reports an &#39;Internal server error.&#39;
+---
+Internal server error
+
+Fail Reason: The response does not state an assignee&#39;s name nor does it indicate that the ticket is unassigned. It only reports an &#39;Internal server error.&#39;</td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td data-content="HFLO-56">HFLO-56</td>
+          
+          <td data-content="[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate that the ticket is unassigned.">[FAIL] (0.00)
+
+The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate that the ticket is unassigned.
+---
+Internal server error
+
+Fail Reason: The response &#39;Internal server error&#39; does not state an assignee&#39;s name nor indicate that the ticket is unassigned.</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+description: "Security_Prompt_Injection_Resilience"
+
+prompts:
+  - file://../../prompts/prompt_Security_Prompt_Injection_Resilience.txt
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/test_Security_Prompt_Injection_Resilience.yaml

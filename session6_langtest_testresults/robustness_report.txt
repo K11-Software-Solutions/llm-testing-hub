@@ -1,0 +1,3 @@
+,category,test_type,fail_count,pass_count,pass_rate,minimum_pass_rate,pass
+0,robustness,add_typo,1,0,0%,80%,False
+1,robustness,uppercase,1,0,0%,80%,False

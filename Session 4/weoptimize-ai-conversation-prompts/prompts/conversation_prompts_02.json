@@ -1,0 +1,55 @@
+{
+  "conversations": [
+    {
+      "description": "Status → Assignee → Reporter for HFLO-46",
+      "messages": [
+        { "role": "user", "content": "What is the current workflow status of HFLO-46?" },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "Who is assigned to HFLO-46?" },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "Who reported HFLO-46?" },
+        { "role": "assistant", "content": "{{output}}" }
+      ]
+    },
+    {
+      "description": "Switch context from HFLO-54 to HFLO-56",
+      "messages": [
+        { "role": "user", "content": "What is the priority of HFLO-54?" },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "Now give me the status of HFLO-56." },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "And who is the assignee for HFLO-54?" },
+        { "role": "assistant", "content": "{{output}}" }
+      ]
+    },
+    {
+      "description": "Ask about HFLO-69 and drill down into related stories",
+      "messages": [
+        { "role": "user", "content": "Tell me more about HFLO-69" },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "For the related stories, provide details such as their status, assignees, and sprint." },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "List the related tickets which were part of the previous sprint." },
+        { "role": "assistant", "content": "{{output}}" }
+      ]
+    },
+    {
+      "description": "Compare HFLO-54 and HFLO-56",
+      "messages": [
+        { "role": "user", "content": "Give me the current status of HFLO-54." },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "Now compare its assignee and priority with HFLO-56." },
+        { "role": "assistant", "content": "{{output}}" }
+      ]
+    },
+    {
+      "description": "Tickets ready for QA",
+      "messages": [
+        { "role": "user", "content": "List all tickets marked as READY FOR QA." },
+        { "role": "assistant", "content": "{{output}}" },
+        { "role": "user", "content": "For each, provide the assignee and reporter." },
+        { "role": "assistant", "content": "{{output}}" }
+      ]
+    }
+  ]
+}

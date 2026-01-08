@@ -1,0 +1,10 @@
+description: "Hallucination_Or_Factual_Pressure"
+
+prompts:
+  - file://../../prompts/prompt_Hallucination_Or_Factual_Pressure.txt
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/test_Hallucination_Or_Factual_Pressure.yaml

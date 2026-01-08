@@ -1,0 +1,1 @@
+{"category":{"0":"fairness","1":"robustness"},"test_type":{"0":"min_gender_f1_score","1":"add_typo"},"fail_count":{"0":0,"1":0},"pass_count":{"0":3,"1":1},"pass_rate":{"0":"100%","1":"100%"},"minimum_pass_rate":{"0":"0%","1":"0%"},"pass":{"0":true,"1":true}}

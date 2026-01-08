@@ -1,0 +1,10 @@
+description: "Context_window_limits"
+
+prompts:
+  - file://../../prompts/prompt_Context_window_limits.txt
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/test_Context_window_limits.yaml

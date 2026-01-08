@@ -1,0 +1,235 @@
+- description: 'HFLO-30 expected status'
+  vars: { ticket: 'HFLO-30', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if the answer clearly states exactly one status from {Unresolved, Open, In Progress, Closed},
+        and it matches "{{expected_status}}". No hedging (e.g., "maybe", "likely") or multiple statuses.
+
+- description: 'HFLO-31 expected status'
+  vars: { ticket: 'HFLO-31', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-32 expected status'
+  vars: { ticket: 'HFLO-32', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-33 expected status'
+  vars: { ticket: 'HFLO-33', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-34 expected status'
+  vars: { ticket: 'HFLO-34', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-35 expected status'
+  vars: { ticket: 'HFLO-35', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-36 expected status'
+  vars: { ticket: 'HFLO-36', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-37 expected status'
+  vars: { ticket: 'HFLO-37', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-38 expected status'
+  vars: { ticket: 'HFLO-38', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-39 expected status'
+  vars: { ticket: 'HFLO-39', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-40 expected status'
+  vars: { ticket: 'HFLO-40', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-41 expected status'
+  vars: { ticket: 'HFLO-41', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-42 expected status'
+  vars: { ticket: 'HFLO-42', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-43 expected status'
+  vars: { ticket: 'HFLO-43', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-44 expected status'
+  vars: { ticket: 'HFLO-44', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-45 expected status'
+  vars: { ticket: 'HFLO-45', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-46 expected status'
+  vars: { ticket: 'HFLO-46', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-51 expected status'
+  vars: { ticket: 'HFLO-51', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-52 expected status'
+  vars: { ticket: 'HFLO-52', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-53 expected status'
+  vars: { ticket: 'HFLO-53', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-54 expected status'
+  vars: { ticket: 'HFLO-54', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-55 expected status'
+  vars: { ticket: 'HFLO-55', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-56 expected status'
+  vars: { ticket: 'HFLO-56', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+# --- From earlier examples you used (keep them too) ---
+- description: 'HFLO-69 expected status'
+  vars: { ticket: 'HFLO-69 View list of visitors', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: '"Publish the app to App Store" expected status'
+  vars: { ticket: 'Publish the app to App Store', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.
+
+- description: 'HFLO-88 expected status'
+  vars: { ticket: 'HFLO-88 Crash on checkout', expected_status: '<EXPECTED_STATUS>' }
+  assert:
+    - type: contains
+      value: '{{expected_status}}'
+    - type: llm-rubric
+      value: |
+        PASS if exactly one status is provided and equals "{{expected_status}}". No hedging.

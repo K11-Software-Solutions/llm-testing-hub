@@ -1,0 +1,97 @@
+{"text": "I love this product!", "label": "['positive']"}
+{"text": "This is the worst experience ever.", "label": "['negative']"}
+{"text": "It was okay, not great.", "label": "['neutral']"}
+{"text": "Absolutely fantastic!", "label": "['positive']"}
+{"text": "I would not recommend this.", "label": "['negative']"}
+{"text": "Great value for money.", "label": "['positive']"}
+{"text": "Terrible customer service.", "label": "['negative']"}
+{"text": "Mediocre at best.", "label": "['neutral']"}
+{"text": "Exceeded my expectations!", "label": "['positive']"}
+{"text": "Not worth the price.", "label": "['negative']"}
+{"text": "Very satisfied with my purchase.", "label": "['positive']"}
+{"text": "Disappointing experience.", "label": "['negative']"}
+{"text": "Average quality.", "label": "['neutral']"}
+{"text": "Highly recommend!", "label": "['positive']"}
+{"text": "Would not buy again.", "label": "['negative']"}
+{"text": "Just okay.", "label": "['neutral']"}
+{"text": "Superb!", "label": "['positive']"}
+{"text": "Awful, do not buy.", "label": "['negative']"}
+{"text": "Nothing special.", "label": "['neutral']"}
+{"text": "Loved it!", "label": "['positive']"}
+{"text": "Horrible product.", "label": "['negative']"}
+{"text": "Fine for the price.", "label": "['neutral']"}
+{"text": "Best purchase ever!", "label": "['positive']"}
+{"text": "Waste of money.", "label": "['negative']"}
+{"text": "Neither good nor bad.", "label": "['neutral']"}
+{"text": "Fantastic!", "label": "['positive']"}
+{"text": "Regret buying this.", "label": "['negative']"}
+{"text": "It's alright.", "label": "['neutral']"}
+{"text": "Top notch!", "label": "['positive']"}
+{"text": "Very poor quality.", "label": "['negative']"}
+{"text": "Meh.", "label": "['neutral']"}
+{"text": "Super happy!", "label": "['positive']"}
+{"text": "Broke after one use.", "label": "['negative']"}
+{"text": "So-so.", "label": "['neutral']"}
+{"text": "Five stars!", "label": "['positive']"}
+{"text": "Wouldn't recommend.", "label": "['negative']"}
+{"text": "Unimpressed.", "label": "['neutral']"}
+{"text": "Delighted!", "label": "['positive']"}
+{"text": "Defective item.", "label": "['negative']"}
+{"text": "Indifferent.", "label": "['neutral']"}
+{"text": "Perfect!", "label": "['positive']"}
+{"text": "Returned it immediately.", "label": "['negative']"}
+{"text": "Neither here nor there.", "label": "['neutral']"}
+{"text": "Great experience!", "label": "['positive']"}
+{"text": "Not as described.", "label": "['negative']"}
+{"text": "Unremarkable.", "label": "['neutral']"}
+{"text": "Superb quality!", "label": "['positive']"}
+{"text": "Broke quickly.", "label": "['negative']"}
+{"text": "Mildly pleased.", "label": "['neutral']"}
+{"text": "Would buy again!", "label": "['positive']"}
+{"text": "Terrible packaging.", "label": "['negative']"}
+{"text": "No strong feelings.", "label": "['neutral']"}
+{"text": "Impressed!", "label": "['positive']"}
+{"text": "Didn't work.", "label": "['negative']"}
+{"text": "Mediocre.", "label": "['neutral']"}
+{"text": "Loved the features!", "label": "['positive']"}
+{"text": "Not functional.", "label": "['negative']"}
+{"text": "Just fine.", "label": "['neutral']"}
+{"text": "Best ever!", "label": "['positive']"}
+{"text": "Never again.", "label": "['negative']"}
+{"text": "Average.", "label": "['neutral']"}
+{"text": "Superb service!", "label": "['positive']"}
+{"text": "Very dissatisfied.", "label": "['negative']"}
+{"text": "Nothing to write home about.", "label": "['neutral']"}
+{"text": "Great product!", "label": "['positive']"}
+{"text": "Broke instantly.", "label": "['negative']"}
+{"text": "So-so experience.", "label": "['neutral']"}
+{"text": "Very pleased!", "label": "['positive']"}
+{"text": "Not worth it.", "label": "['negative']"}
+{"text": "Neither satisfied nor dissatisfied.", "label": "['neutral']"}
+{"text": "Excellent!", "label": "['positive']"}
+{"text": "Hated it.", "label": "['negative']"}
+{"text": "Mediocre product.", "label": "['neutral']"}
+{"text": "Loved the quality!", "label": "['positive']"}
+{"text": "Wouldn't buy again.", "label": "['negative']"}
+{"text": "Just average.", "label": "['neutral']"}
+{"text": "Superb item!", "label": "['positive']"}
+{"text": "Terrible experience.", "label": "['negative']"}
+{"text": "No opinion.", "label": "['neutral']"}
+{"text": "Great value!", "label": "['positive']"}
+{"text": "Not good.", "label": "['negative']"}
+{"text": "Indifferent experience.", "label": "['neutral']"}
+{"text": "Fantastic purchase!", "label": "['positive']"}
+{"text": "Awful quality.", "label": "['negative']"}
+{"text": "Neither happy nor sad.", "label": "['neutral']"}
+{"text": "Loved everything!", "label": "['positive']"}
+{"text": "Very bad.", "label": "['negative']"}
+{"text": "Just okay product.", "label": "['neutral']"}
+{"text": "Perfect purchase!", "label": "['positive']"}
+{"text": "Would not recommend.", "label": "['negative']"}
+{"text": "Nothing great.", "label": "['neutral']"}
+{"text": "Super happy with it!", "label": "['positive']"}
+{"text": "Terrible item.", "label": "['negative']"}
+{"text": "So-so product.", "label": "['neutral']"}
+{"text": "Best ever purchase!", "label": "['positive']"}
+{"text": "Worst ever.", "label": "['negative']"}
+{"text": "Average at best.", "label": "['neutral']"}

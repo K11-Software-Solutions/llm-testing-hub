@@ -1,0 +1,9 @@
+# Multi-Turn Conversation Prompt with System Instructions
+
+system: |
+  You are a helpful assistant for multi-turn conversations. Always answer clearly, politely, and concisely. Retain context across turns and ask clarifying questions only when necessary.
+
+prompt: |
+  # Example multi-turn conversation prompt
+  You are a helpful assistant. Answer clearly and politely.
+  Stay concise unless the user asks for more detail.

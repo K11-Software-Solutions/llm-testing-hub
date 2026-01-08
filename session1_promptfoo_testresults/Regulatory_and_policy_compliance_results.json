@@ -1,0 +1,318 @@
+{
+  "evalId": "eval-c9d-2026-01-01T04:45:18",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-01-01T04:45:18.812Z",
+    "prompts": [
+      {
+        "raw": "Describe how {{product}} complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors).",
+        "label": "Describe how {{product}} complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors).",
+        "id": "9ba663de036d72fb871727f98874a169bf60ede8f4335a1780e23d8df01dcccb",
+        "provider": "openai:gpt-4o",
+        "metrics": {
+          "score": 2,
+          "testPassCount": 2,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 2,
+          "assertFailCount": 0,
+          "totalLatencyMs": 50,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 1337,
+            "total": 1337,
+            "numRequests": 2,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 3067,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 3067,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.012875000000000001
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.006805,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 1413,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 1413,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Mentions lawful basis, data minimization, user rights (access/deletion), retention, security measures, and processor/controller responsibilities."
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "The output mentions lawful bases (consent, contractual necessity, legitimate interests), references GDPR’s data minimization principle, covers user rights including access and erasure, details retention policies, lists security measures (encryption, audits, 2FA), and outlines processor/sub-processor handling with DPAs and due diligence, reflecting controller responsibilities.",
+              "tokensUsed": {
+                "total": 1413,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 1413,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are grading output according to a user-specified rubric. If the statement in the rubric is true, then the output passes the test. You respond with a JSON object with this structure: {reason: string, pass: boolean, score: number}\\n\\nExamples:\\n\\n<Output>Hello world</Output>\\n<Rubric>Content contains a greeting</Rubric>\\n{\\\"reason\\\": \\\"the content contains the word 'Hello'\\\", \\\"pass\\\": true, \\\"score\\\": 1.0}\\n\\n<Output>Avast ye swabs, repel the invaders!</Output>\\n<Rubric>Does not speak like a pirate</Rubric>\\n{\\\"reason\\\": \\\"'avast ye' is a common pirate term\\\", \\\"pass\\\": false, \\\"score\\\": 0.0}\"},{\"role\":\"user\",\"content\":\"<Output>\\nEnsuring compliance with the General Data Protection Regulation (GDPR) is crucial for any SaaS platform. Here’s a detailed breakdown of how a SaaS platform can comply with GDPR, focusing on lawful basis, data subject rights, data retention, security, and data processors:\\n\\n1. **Lawful Basis for Processing**:\\n    - **Consent**: The platform obtains explicit consent from users before collecting and processing personal data. This is done through clear and straightforward consent forms that specify what data is being collected and for what purpose.\\n    - **Contractual Necessity**: Data processing is often justified on the basis that it is necessary to fulfill the contract of service provision between the platform and the user.\\n    - **Legitimate Interests**: In some cases, the platform relies on legitimate interests, ensuring that these interests do not override the rights and freedoms of the data subjects.\\n\\n2. **Data Subject Rights**:\\n    - **Right to Access**: Users can easily request access to their personal data stored on the platform through a user-friendly interface or contact form.\\n    - **Right to Rectification**: The platform provides mechanisms for users to update or correct their personal data from their account settings or by contacting support.\\n    - **Right to Erasure**: Users can request the deletion of their personal data by submitting a request via the platform, adhering to the conditions under GDPR.\\n    - **Right to Restrict Processing**: Users have the option to limit the processing of their data, accessible through their account preferences.\\n    - **Right to Data Portability**: The platform offers tools or support to export users' data in a commonly used and machine-readable format.\\n    - **Right to Object**: Users are informed of their rights to object to certain types of processing, such as direct marketing. Clear options are made available for users to exercise this right.\\n\\n3. **Retention Policies**:\\n    - The platform implements clear data retention policies that comply with GDPR’s data minimization principle, ensuring personal data is not kept longer than necessary.\\n    - Users are informed of these policies through privacy notices. Anonymization or deletion of data is carried out as soon as the data's purpose is fulfilled or after a specified retention period.\\n\\n4. **Security Measures**:\\n    - The platform employs industry-standard encryption and security protocols (such as TLS/SSL for data in transit and AES for data at rest) to protect personal data.\\n    - Regular security audits and vulnerability assessments are conducted to identify and mitigate potential risks.\\n    - Implementations like two-factor authentication (2FA) are offered to enhance account security.\\n\\n5. **Data Processors and Sub-Processors**:\\n    - The platform conducts thorough due diligence when selecting data processors, ensuring they comply with GDPR requirements.\\n    - Data Processing Agreements (DPAs) are in place with all subprocessors, outlining their responsibilities in data protection.\\n    - The platform maintains a publicly accessible list of all third-party processors and subprocessors, along with their purposes, to ensure transparency.\\n\\nIn addition to these measures, the platform also assigns a Data Protection Officer (DPO) if necessary—depending on the scope and nature of data processing—and provides regular GDPR training for all employees who handle personal data. These actions help to not only achieve compliance but also build trust with users by emphasizing data protection and transparency.\\n</Output>\\n<Rubric>\\nMentions lawful basis, data minimization, user rights (access/deletion), retention, security measures, and processor/controller responsibilities.\\n</Rubric>\"}]"
+              }
+            }
+          ]
+        },
+        "id": "a716ddcc-2a59-4514-bbe1-793cfab512bc",
+        "latencyMs": 23,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Describe how Our SaaS platform complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors).",
+          "label": "Describe how {{product}} complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors)."
+        },
+        "promptId": "9ba663de036d72fb871727f98874a169bf60ede8f4335a1780e23d8df01dcccb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "Ensuring compliance with the General Data Protection Regulation (GDPR) is crucial for any SaaS platform. Here’s a detailed breakdown of how a SaaS platform can comply with GDPR, focusing on lawful basis, data subject rights, data retention, security, and data processors:\n\n1. **Lawful Basis for Processing**:\n    - **Consent**: The platform obtains explicit consent from users before collecting and processing personal data. This is done through clear and straightforward consent forms that specify what data is being collected and for what purpose.\n    - **Contractual Necessity**: Data processing is often justified on the basis that it is necessary to fulfill the contract of service provision between the platform and the user.\n    - **Legitimate Interests**: In some cases, the platform relies on legitimate interests, ensuring that these interests do not override the rights and freedoms of the data subjects.\n\n2. **Data Subject Rights**:\n    - **Right to Access**: Users can easily request access to their personal data stored on the platform through a user-friendly interface or contact form.\n    - **Right to Rectification**: The platform provides mechanisms for users to update or correct their personal data from their account settings or by contacting support.\n    - **Right to Erasure**: Users can request the deletion of their personal data by submitting a request via the platform, adhering to the conditions under GDPR.\n    - **Right to Restrict Processing**: Users have the option to limit the processing of their data, accessible through their account preferences.\n    - **Right to Data Portability**: The platform offers tools or support to export users' data in a commonly used and machine-readable format.\n    - **Right to Object**: Users are informed of their rights to object to certain types of processing, such as direct marketing. Clear options are made available for users to exercise this right.\n\n3. **Retention Policies**:\n    - The platform implements clear data retention policies that comply with GDPR’s data minimization principle, ensuring personal data is not kept longer than necessary.\n    - Users are informed of these policies through privacy notices. Anonymization or deletion of data is carried out as soon as the data's purpose is fulfilled or after a specified retention period.\n\n4. **Security Measures**:\n    - The platform employs industry-standard encryption and security protocols (such as TLS/SSL for data in transit and AES for data at rest) to protect personal data.\n    - Regular security audits and vulnerability assessments are conducted to identify and mitigate potential risks.\n    - Implementations like two-factor authentication (2FA) are offered to enhance account security.\n\n5. **Data Processors and Sub-Processors**:\n    - The platform conducts thorough due diligence when selecting data processors, ensuring they comply with GDPR requirements.\n    - Data Processing Agreements (DPAs) are in place with all subprocessors, outlining their responsibilities in data protection.\n    - The platform maintains a publicly accessible list of all third-party processors and subprocessors, along with their purposes, to ensure transparency.\n\nIn addition to these measures, the platform also assigns a Data Protection Officer (DPO) if necessary—depending on the scope and nature of data processing—and provides regular GDPR training for all employees who handle personal data. These actions help to not only achieve compliance but also build trust with users by emphasizing data protection and transparency.",
+          "tokenUsage": {
+            "cached": 706,
+            "total": 706
+          },
+          "cached": true,
+          "latencyMs": 6147,
+          "finishReason": "stop",
+          "cost": 0.006805,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "product": "Our SaaS platform"
+          },
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Mentions lawful basis, data minimization, user rights (access/deletion), retention, security measures, and processor/controller responsibilities."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "product": "Our SaaS platform"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.006070000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 1654,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 1654,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "assertion": {
+                "type": "llm-rubric",
+                "value": "Mentions consent where relevant, user rights, privacy notice, retention, security, and handling of third-party processors/SDKs."
+              },
+              "pass": true,
+              "score": 1,
+              "reason": "Output covers all required elements: consent as a lawful basis (with withdrawal), detailed data subject rights, reference to privacy policies (privacy notice), a data retention policy, security measures, and management of third-party processors (agreements, due diligence/audits), which includes SDKs.",
+              "tokensUsed": {
+                "total": 1654,
+                "prompt": 0,
+                "completion": 0,
+                "cached": 1654,
+                "numRequests": 0,
+                "completionDetails": {
+                  "reasoning": 0,
+                  "acceptedPrediction": 0,
+                  "rejectedPrediction": 0
+                }
+              },
+              "metadata": {
+                "renderedGradingPrompt": "[{\"role\":\"system\",\"content\":\"You are grading output according to a user-specified rubric. If the statement in the rubric is true, then the output passes the test. You respond with a JSON object with this structure: {reason: string, pass: boolean, score: number}\\n\\nExamples:\\n\\n<Output>Hello world</Output>\\n<Rubric>Content contains a greeting</Rubric>\\n{\\\"reason\\\": \\\"the content contains the word 'Hello'\\\", \\\"pass\\\": true, \\\"score\\\": 1.0}\\n\\n<Output>Avast ye swabs, repel the invaders!</Output>\\n<Rubric>Does not speak like a pirate</Rubric>\\n{\\\"reason\\\": \\\"'avast ye' is a common pirate term\\\", \\\"pass\\\": false, \\\"score\\\": 0.0}\"},{\"role\":\"user\",\"content\":\"<Output>\\nEnsuring a mobile app complies with the General Data Protection Regulation (GDPR) involves several critical steps, focusing on various aspects of data handling and user privacy. Here's how a mobile app can achieve compliance:\\n\\n1. **Lawful Basis for Processing:**\\n   - **Consent:** Obtain clear and explicit consent from users before collecting or processing their personal data. Ensure consent is specific, informed, and freely given, with an easy option to withdraw.\\n   - **Contractual Necessity:** If data processing is necessary for the performance of a contract with the user (e.g., providing a service via the app), this can be a lawful basis.\\n   - **Legal Obligation:** Processing can be justified if necessary to comply with a legal obligation.\\n   - **Legitimate Interests:** You may process data based on legitimate interests, provided it doesn't override the data subjects' rights and freedoms. A thorough impact assessment is often required.\\n\\n2. **Data Subject Rights:**\\n   - **Right of Access:** Users must be able to access their data and obtain information on how it is processed.\\n   - **Right to Rectification:** Users should be able to correct inaccurate personal data.\\n   - **Right to Erasure (Right to be Forgotten):** Provide users the option to delete their personal data when it's no longer needed for its original purpose, if consent is withdrawn, or if processing was unlawful.\\n   - **Right to Restrict Processing:** Users should have the ability to restrict processing under certain conditions, like contesting data accuracy.\\n   - **Right to Data Portability:** Enable users to obtain and reuse their personal data across different services.\\n   - **Right to Object:** Allow users to object to data processing based on legitimate interests or for direct marketing purposes.\\n\\n3. **Data Retention:**\\n   - Implement a data retention policy specifying how long personal data will be retained. Data should not be kept longer than necessary for its processing purpose. Establish automatic deletion mechanisms or anonymization for data no longer needed.\\n\\n4. **Security Measures:**\\n   - Protect personal data by implementing appropriate technical and organizational measures, such as data encryption, anonymization, and secure access controls. Regularly test and evaluate the effectiveness of these measures.\\n   - Have incident response procedures in place to detect, report, and investigate data breaches.\\n\\n5. **Data Processors:**\\n   - If the app uses third-party data processors, ensure there are adequate data processing agreements in place. These agreements should stipulate how the data processor will protect personal data and comply with GDPR requirements.\\n   - Conduct due diligence and regularly assess and audit processors to ensure they maintain GDPR compliance.\\n\\nIn addition to these steps, it's beneficial for an app to appoint a Data Protection Officer (DPO) if engaging in large scale processing of sensitive data, provide ongoing GDPR training for staff, and ensure comprehensive documentation of processing activities. Regular reviews and updates to privacy policies to reflect changes in data processing or legal regulations are also vital for ongoing compliance.\\n</Output>\\n<Rubric>\\nMentions consent where relevant, user rights, privacy notice, retention, security, and handling of third-party processors/SDKs.\\n</Rubric>\"}]"
+              }
+            }
+          ]
+        },
+        "id": "6965515f-0a77-433b-9a33-b651b68fd1cb",
+        "latencyMs": 27,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Describe how Mobile App complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors).",
+          "label": "Describe how {{product}} complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors)."
+        },
+        "promptId": "9ba663de036d72fb871727f98874a169bf60ede8f4335a1780e23d8df01dcccb",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "Ensuring a mobile app complies with the General Data Protection Regulation (GDPR) involves several critical steps, focusing on various aspects of data handling and user privacy. Here's how a mobile app can achieve compliance:\n\n1. **Lawful Basis for Processing:**\n   - **Consent:** Obtain clear and explicit consent from users before collecting or processing their personal data. Ensure consent is specific, informed, and freely given, with an easy option to withdraw.\n   - **Contractual Necessity:** If data processing is necessary for the performance of a contract with the user (e.g., providing a service via the app), this can be a lawful basis.\n   - **Legal Obligation:** Processing can be justified if necessary to comply with a legal obligation.\n   - **Legitimate Interests:** You may process data based on legitimate interests, provided it doesn't override the data subjects' rights and freedoms. A thorough impact assessment is often required.\n\n2. **Data Subject Rights:**\n   - **Right of Access:** Users must be able to access their data and obtain information on how it is processed.\n   - **Right to Rectification:** Users should be able to correct inaccurate personal data.\n   - **Right to Erasure (Right to be Forgotten):** Provide users the option to delete their personal data when it's no longer needed for its original purpose, if consent is withdrawn, or if processing was unlawful.\n   - **Right to Restrict Processing:** Users should have the ability to restrict processing under certain conditions, like contesting data accuracy.\n   - **Right to Data Portability:** Enable users to obtain and reuse their personal data across different services.\n   - **Right to Object:** Allow users to object to data processing based on legitimate interests or for direct marketing purposes.\n\n3. **Data Retention:**\n   - Implement a data retention policy specifying how long personal data will be retained. Data should not be kept longer than necessary for its processing purpose. Establish automatic deletion mechanisms or anonymization for data no longer needed.\n\n4. **Security Measures:**\n   - Protect personal data by implementing appropriate technical and organizational measures, such as data encryption, anonymization, and secure access controls. Regularly test and evaluate the effectiveness of these measures.\n   - Have incident response procedures in place to detect, report, and investigate data breaches.\n\n5. **Data Processors:**\n   - If the app uses third-party data processors, ensure there are adequate data processing agreements in place. These agreements should stipulate how the data processor will protect personal data and comply with GDPR requirements.\n   - Conduct due diligence and regularly assess and audit processors to ensure they maintain GDPR compliance.\n\nIn addition to these steps, it's beneficial for an app to appoint a Data Protection Officer (DPO) if engaging in large scale processing of sensitive data, provide ongoing GDPR training for staff, and ensure comprehensive documentation of processing activities. Regular reviews and updates to privacy policies to reflect changes in data processing or legal regulations are also vital for ongoing compliance.",
+          "tokenUsage": {
+            "cached": 631,
+            "total": 631
+          },
+          "cached": true,
+          "latencyMs": 5161,
+          "finishReason": "stop",
+          "cost": 0.006070000000000001,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "product": "Mobile App"
+          },
+          "assert": [
+            {
+              "type": "llm-rubric",
+              "value": "Mentions consent where relevant, user rights, privacy notice, retention, security, and handling of third-party processors/SDKs."
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "product": "Mobile App"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 2,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 1337,
+        "total": 1337,
+        "numRequests": 2,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 3067,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 3067,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      },
+      "durationMs": 63
+    }
+  },
+  "config": {
+    "tags": {},
+    "prompts": [
+      "Describe how {{product}} complies with GDPR. Be specific (lawful basis, data subject rights, retention, security, processors)."
+    ],
+    "providers": [
+      "openai:gpt-4o"
+    ],
+    "tests": [
+      {
+        "vars": {
+          "product": "Our SaaS platform"
+        },
+        "assert": [
+          {
+            "type": "llm-rubric",
+            "value": "Mentions lawful basis, data minimization, user rights (access/deletion), retention, security measures, and processor/controller responsibilities."
+          }
+        ]
+      },
+      {
+        "vars": {
+          "product": "Mobile App"
+        },
+        "assert": [
+          {
+            "type": "llm-rubric",
+            "value": "Mentions consent where relevant, user rights, privacy notice, retention, security, and handling of third-party processors/SDKs."
+          }
+        ]
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "outputPath": [
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Regulatory_and_policy_compliance_results.json",
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Regulatory_and_policy_compliance_results.html"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.120.8",
+    "nodeVersion": "v22.18.0",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2026-01-01T04:45:18.952Z",
+    "evaluationCreatedAt": "2026-01-01T04:45:18.812Z"
+  }
+}

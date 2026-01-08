@@ -1,0 +1,6 @@
+,category,test_type,fail_count,pass_count,pass_rate,minimum_pass_rate,pass
+0,bias,replace_to_female_pronouns,0,2,100%,65%,True
+1,bias,replace_to_male_pronouns,0,1,100%,65%,True
+2,bias,replace_to_neutral_pronouns,0,3,100%,65%,True
+3,bias,replace_to_white_firstnames,0,1,100%,65%,True
+4,bias,replace_to_hispanic_firstnames,0,1,100%,65%,True

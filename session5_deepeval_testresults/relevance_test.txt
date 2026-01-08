@@ -1,0 +1,4 @@
+Prompt: Tell me about the Eiffel Tower.
+Expected: Eiffel Tower
+Output: The Eiffel Tower is an iconic landmark in Paris, France. It was completed in 1889 as the entrance arch for the 1889 World's Fair, and was initially criticized by some as an eyesore. However, it has since
+Relevance (Faithfulness) test passed.

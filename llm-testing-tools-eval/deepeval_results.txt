@@ -1,0 +1,34 @@
+DeepEval: all test cases passed thresholds ✓
+
+Cases: 5 | Thresholds: faithfulness>=0.8, relevancy>=0.8
+
+Test case 1:
+Input: Question about AcmeCRM: How do I export contacts?
+Expected: Go to Contacts â†’ Export â†’ choose CSV or XLSX.
+Faithfulness: 1.0
+Relevancy: 1.0
+
+Test case 2:
+Input: Question about AcmeCRM: Does it support SSO with Okta?
+Expected: Yes. In Settings â†’ Security, enable SSO and add your Okta metadata.
+Faithfulness: 1.0
+Relevancy: 1.0
+
+Test case 3:
+Input: Question about BetaBooks: How do I invite a collaborator?
+Expected: Open the project, click Share, enter their email and set role.
+Faithfulness: 1.0
+Relevancy: 1.0
+
+Test case 4:
+Input: Question about AcmeCRM: Can I import contacts from Excel?
+Expected: Yes. Use Contacts â†’ Import and upload your Excel or CSV file.
+Faithfulness: 1.0
+Relevancy: 1.0
+
+Test case 5:
+Input: Question about AcmeCRM: How do I reset my password?
+Expected: Go to Settings â†’ Account â†’ Reset Password and follow the instructions.
+Faithfulness: 1.0
+Relevancy: 1.0
+

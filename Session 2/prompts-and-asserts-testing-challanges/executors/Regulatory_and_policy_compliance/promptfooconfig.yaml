@@ -1,0 +1,10 @@
+description: "Regulatory_and_policy_compliance"
+
+prompts:
+  - file://../../prompts/prompt_Regulatory_and_policy_compliance.txt
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/test_Regulatory_and_policy_compliance.yaml

@@ -1,0 +1,4 @@
+model: lmstudio:qwen3-1.7b-instruct
+base_url: ${LMSTUDIO_BASE_URL}
+temperature: 0.2
+max_tokens: 512

@@ -1,0 +1,4 @@
+Prompt: What is the capital of France?
+Expected: Paris
+Output: The capital of France is Paris.
+Faithfulness test passed.

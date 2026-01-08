@@ -1,0 +1,11 @@
+deepeval>=0.21.0
+langtest>=2.0.0
+openai>=1.30.0
+pydantic>=2.6.0
+
+# Optional
+agenta
+
+# Optional (Agenta demo)
+agenta
+opentelemetry-instrumentation-openai

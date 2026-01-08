@@ -1,0 +1,9 @@
+description: 'WeOptimize.ai - Testing'
+prompts:
+  - file://../../prompts/conversation_pompts_02.json
+
+providers:
+  - file://../../providers/providers.yaml
+
+tests:
+  - file://../../tests/conversation_asserts.yaml

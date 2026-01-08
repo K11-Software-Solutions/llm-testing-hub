@@ -1,0 +1,38 @@
+name: Nightly Red-Team Eval
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 02:00 UTC nightly
+  workflow_dispatch:
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Promptfoo
+        run: npm i -g promptfoo
+
+      - name: Run baseline suite (nightly)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LMSTUDIO_BASE_URL: ${{ secrets.LMSTUDIO_BASE_URL }}
+        run: |
+          chmod +x ./scripts/run_promptfoo.sh
+          ./scripts/run_promptfoo.sh configs/redteam-translation.yaml
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: nightly-reports-${{ github.run_id }}
+          path: |
+            reports/**

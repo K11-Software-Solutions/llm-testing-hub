@@ -1,0 +1,3 @@
+  - assert:
+      - type: regex             # must match 1995 exactly
+        value: "\\b1995\\b"

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session 4 Multi-Turn Conversation Test Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        table { border-collapse: collapse; width: 100%; margin-top: 1em; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .pass { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Session 4: Multi-Turn Conversation Test Results</h1>
+    <table>
+        <tr>
+            <th>Test Description</th>
+            <th>Conversation</th>
+            <th>Question</th>
+            <th>Assertions</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Multi-turn: Book a flight conversation</td>
+            <td>
+                <ul>
+                    <li>User: Hi, I want to book a flight from New York to London next Friday.<br>Assistant: Sure! What time would you prefer to depart?</li>
+                    <li>User: I’d like to leave in the evening.<br>Assistant: Great. Do you have a preferred airline?</li>
+                    <li>User: No preference, just the cheapest option.<br>Assistant: Understood. I’ll look for the most affordable evening flights from New York to London next Friday. Would you like a direct flight?</li>
+                    <li>User: Yes, direct is best.<br>Assistant: Got it. Here are some direct evening flights...</li>
+                </ul>
+            </td>
+            <td>List two direct evening flights from New York to London for next Friday.</td>
+            <td>
+                <ul>
+                    <li>Contains: "direct evening flights"</li>
+                    <li>Conversation relevance &ge; 0.8</li>
+                </ul>
+            </td>
+            <td class="pass">Pass</td>
+        </tr>
+    </table>
+    <p>Report generated: January 8, 2026</p>
+</body>
+</html>

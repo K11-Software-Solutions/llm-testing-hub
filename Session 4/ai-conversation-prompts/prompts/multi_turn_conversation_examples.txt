@@ -1,0 +1,59 @@
+# Multi-Turn Conversation Prompt Examples
+
+Below are example multi-turn prompts for LLM evaluation. These can be used to test context retention, instruction following, and conversational flow.
+
+---
+
+## Example 1: Booking a Flight
+
+**User:** Hi, I want to book a flight from New York to London next Friday.
+**Assistant:** Sure! What time would you prefer to depart?
+**User:** I’d like to leave in the evening.
+**Assistant:** Great. Do you have a preferred airline?
+**User:** No preference, just the cheapest option.
+**Assistant:** Understood. I’ll look for the most affordable evening flights from New York to London next Friday. Would you like a direct flight?
+**User:** Yes, direct is best.
+**Assistant:** Got it. Here are some direct evening flights...
+
+---
+
+## Example 2: Tech Support
+
+**User:** My laptop won’t connect to Wi-Fi.
+**Assistant:** I’m sorry to hear that. Is this a new issue or has it happened before?
+**User:** It’s new. Started today.
+**Assistant:** Have you tried restarting your laptop?
+**User:** Yes, but it didn’t help.
+**Assistant:** Are other devices able to connect to the same Wi-Fi network?
+**User:** Yes, my phone works fine.
+**Assistant:** Let’s try forgetting the network and reconnecting. Would you like instructions?
+**User:** Yes, please.
+**Assistant:** Here’s how to forget and reconnect to a Wi-Fi network...
+
+---
+
+## Example 3: Restaurant Recommendation
+
+**User:** Can you recommend a good Italian restaurant nearby?
+**Assistant:** Absolutely! May I know your location?
+**User:** I’m in downtown Chicago.
+**Assistant:** Great. Do you prefer casual or fine dining?
+**User:** Casual is fine.
+**Assistant:** Here are some casual Italian restaurants in downtown Chicago...
+
+---
+
+## Example 4: Medical Appointment Scheduling
+
+**User:** I need to schedule a doctor’s appointment for next week.
+**Assistant:** Of course. What day works best for you?
+**User:** Wednesday or Thursday.
+**Assistant:** Morning or afternoon?
+**User:** Afternoon.
+**Assistant:** What type of doctor do you need to see?
+**User:** A dermatologist.
+**Assistant:** I’ll check available afternoon slots for a dermatologist next Wednesday and Thursday...
+
+---
+
+These examples can be expanded or customized for specific evaluation scenarios.

@@ -1,0 +1,43 @@
+description: 'multi_turn_conversation_prompt - Testing'
+prompts:
+  - file://../../prompts/multi_turn_conversation_examples.txt
+ 
+providers:  # Example: OpenAI provider with API key masking
+  - id: openai:gpt-4o-mini
+    config:
+      temperature: 0
+      max_tokens: 400
+      system: |
+        You are concise, factual, and safe. If uncertain or the info is private, reply "Unknown".
+        Follow exact output formats when specified. Ask at most one clarifying question when necessary.
+
+  # Example: HTTP provider with x-api-key masking
+  # - id: http
+  #   config:
+  #     url: https://api.example.com/endpoint
+  #     method: POST
+  #     headers:
+  #       Content-Type: application/json
+  #       x-api-key: ${X_API_KEY}
+  #     body: |
+  #       {
+  #         "prompt": "{{prompt}}"
+  #       }
+  #     transformResponse: json.message
+
+
+# 👇 Model-graded scorers
+grading:
+  provider: openai:gpt-4o-mini   # model used to grade other outputs
+  scorers:
+    - type: helpfulness
+      weight: 1.0
+    - type: harmlessness
+      weight: 1.0
+    - type: correctness   # aka factual accuracy
+      weight: 1.0
+
+tests:
+  - file://../../tests/multi_turn_conversation.yaml
+
+

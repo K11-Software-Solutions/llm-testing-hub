@@ -1,0 +1,76 @@
+description: "Anthropic sanity run"
+
+providers:
+  - id: anthropic:messages:claude-3-5-sonnet-latest
+    config:
+      temperature: 0
+      max_tokens: 350
+
+prompts:
+  - "{{prompt}}"      
+
+tests:
+  # --- Selenium 4 ---
+  - vars:
+     prompt: |
+      Write in English (US) only.
+      Write a 3-sentence review about "{{topic}}".
+      Start the first sentence with "In".
+      Include the exact phrases "W3C" and "JSON Wire Protocol".
+      Include at least one of: "Selenium Grid" or "WebDriver".
+      Include the standalone word "Web".
+      Do NOT use the words "desktop" or "mobile".
+      End your final sentence with the word "Protocol".
+      Output a single short paragraph.
+     topic: Selenium 4
+    assert:
+      - type: contains
+        value: W3C
+      - type: contains
+        value: "JSON Wire Protocol"
+      - type: contains-any
+        value: ["Selenium Grid", "WebDriver"]
+      - type: not-contains
+        value: desktop
+      - type: not-contains
+        value: mobile
+      - type: regex
+        value: "\\bWeb\\b"
+      - type: starts-with
+        value: "In"
+      - type: regex
+        value: "Protocol\\.?\\s*$"
+
+  # --- Playwright ---
+  - vars:
+      prompt: |
+        Write in English (US) only.
+        Write a 3-sentence review about "{{topic}}".
+        Mention "TypeScript" explicitly and at least one of: "end-to-end" or "automation".
+        Include the number 101 and the year 2024 anywhere in the text.
+      topic: playwright
+    assert:
+      - type: contains
+        value: TypeScript
+      - type: contains-any
+        value: ["end-to-end", "automation"]
+      - type: contains
+        value: "101"
+      - type: contains
+        value: "2024"
+
+  # --- REST Assured ---
+  - vars:
+      prompt: |
+        Write in English (US) only.
+        Write a 2-sentence review about "{{topic}}".
+        Start the first sentence with "REST".
+        Include the words "HTTP" and "DSL" exactly as written.
+      topic: rest assured
+    assert:
+      - type: contains
+        value: HTTP
+      - type: regex
+        value: "\\bDSL\\b"
+      - type: starts-with
+        value: "REST"

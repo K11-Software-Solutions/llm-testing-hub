@@ -1,0 +1,253 @@
+{
+  "evalId": "eval-rnL-2026-01-01T04:45:08",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-01-01T04:45:08.222Z",
+    "prompts": [
+      {
+        "raw": "Answer the question using ONLY this reference text.\n\nReference: {{ground_truth}}\n\nQuestion: {{question}}\n\nAnswer:",
+        "label": "Answer the question using ONLY this reference text.\n\nReference: {{ground_truth}}\n\nQuestion: {{question}}\n\nAnswer:",
+        "id": "88e489c39bff351ee1c4ee13811264a0b8ebc13fd97ccf7f9fd0809a76563d44",
+        "provider": "openai:gpt-4o",
+        "metrics": {
+          "score": 2,
+          "testPassCount": 2,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 0,
+          "assertFailCount": 0,
+          "totalLatencyMs": 51,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 80,
+            "total": 80,
+            "numRequests": 2,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.000275
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.00016,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          }
+        },
+        "id": "b6d2a993-19ad-4fc4-b403-fdb1659f6fe1",
+        "latencyMs": 23,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Answer the question using ONLY this reference text.\n\nReference: The capital of France is Paris.\n\nQuestion: What is the capital of France?\n\nAnswer:",
+          "label": "Answer the question using ONLY this reference text.\n\nReference: {{ground_truth}}\n\nQuestion: {{question}}\n\nAnswer:"
+        },
+        "promptId": "88e489c39bff351ee1c4ee13811264a0b8ebc13fd97ccf7f9fd0809a76563d44",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "The capital of France is Paris.",
+          "tokenUsage": {
+            "cached": 43,
+            "total": 43
+          },
+          "cached": true,
+          "latencyMs": 918,
+          "finishReason": "stop",
+          "cost": 0.00016,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "name": "Capital of France",
+          "vars": {
+            "question": "What is the capital of France?",
+            "ground_truth": "The capital of France is Paris."
+          },
+          "assert": [],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "question": "What is the capital of France?",
+          "ground_truth": "The capital of France is Paris."
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.000115,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          }
+        },
+        "id": "eb07ac3e-4bd6-45cc-815b-0d137d19ee08",
+        "latencyMs": 28,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Answer the question using ONLY this reference text.\n\nReference: The largest planet is Jupiter.\n\nQuestion: What is the largest planet?\n\nAnswer:",
+          "label": "Answer the question using ONLY this reference text.\n\nReference: {{ground_truth}}\n\nQuestion: {{question}}\n\nAnswer:"
+        },
+        "promptId": "88e489c39bff351ee1c4ee13811264a0b8ebc13fd97ccf7f9fd0809a76563d44",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o",
+          "label": ""
+        },
+        "response": {
+          "output": "Jupiter.",
+          "tokenUsage": {
+            "cached": 37,
+            "total": 37
+          },
+          "cached": true,
+          "latencyMs": 889,
+          "finishReason": "stop",
+          "cost": 0.000115,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "name": "Largest planet",
+          "vars": {
+            "question": "What is the largest planet?",
+            "ground_truth": "The largest planet is Jupiter."
+          },
+          "assert": [],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "question": "What is the largest planet?",
+          "ground_truth": "The largest planet is Jupiter."
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 2,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 80,
+        "total": 80,
+        "numRequests": 2,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      },
+      "durationMs": 55
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "Hallucination / factual pressure - force reference usage",
+    "prompts": [
+      "Answer the question using ONLY this reference text.\n\nReference: {{ground_truth}}\n\nQuestion: {{question}}\n\nAnswer:"
+    ],
+    "providers": [
+      "openai:gpt-4o"
+    ],
+    "tests": [
+      {
+        "name": "Capital of France",
+        "vars": {
+          "question": "What is the capital of France?",
+          "ground_truth": "The capital of France is Paris."
+        }
+      },
+      {
+        "name": "Largest planet",
+        "vars": {
+          "question": "What is the largest planet?",
+          "ground_truth": "The largest planet is Jupiter."
+        }
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "outputPath": [
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Hallucination_Or_Factual_Pressure_results.json",
+      "C:\\Users\\kavit\\LLM_Testing/session1_promptfoo_testresults/Hallucination_Or_Factual_Pressure_results.html"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.120.8",
+    "nodeVersion": "v22.18.0",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2026-01-01T04:45:08.331Z",
+    "evaluationCreatedAt": "2026-01-01T04:45:08.222Z"
+  }
+}

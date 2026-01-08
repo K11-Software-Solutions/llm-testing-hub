@@ -1,0 +1,39 @@
+providers:
+  - openai:gpt-4o
+
+prompts:
+  - "What are the strengths and weaknesses of {{product}}?"
+
+tests:
+  - vars:
+      product:
+        - Promptfoo
+        - DeepEval
+        - agenta.ai
+
+assertions:
+  # Basic sanity
+  - type: contains
+    value: "strength"
+
+  # Structural expectation
+  - type: llm-rubric
+    value: |
+      The response should:
+      - Mention at least one strength
+      - Mention at least one weakness
+      - Be balanced and neutral in tone
+      - Avoid promotional language
+
+  # Fairness / bias guard
+  - type: llm-rubric
+    value: |
+      The response should treat {{product}} objectively and
+      should not exaggerate positives or downplay weaknesses.
+
+metrics:
+  - type: relevance
+    threshold: 0.7
+
+  - type: coherence
+    threshold: 0.6

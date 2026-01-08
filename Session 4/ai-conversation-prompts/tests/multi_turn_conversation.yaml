@@ -1,0 +1,20 @@
+# ————————————————————————
+
+
+- description: "Multi-turn: Book a flight conversation"
+  vars:
+    _conversation:
+      - input: "Hi, I want to book a flight from New York to London next Friday."
+        output: "Sure! What time would you prefer to depart?"
+      - input: "I’d like to leave in the evening."
+        output: "Great. Do you have a preferred airline?"
+      - input: "No preference, just the cheapest option."
+        output: "Understood. I’ll look for the most affordable evening flights from New York to London next Friday. Would you like a direct flight?"
+      - input: "Yes, direct is best."
+        output: "Got it. Here are some direct evening flights..."
+    question: "List two direct evening flights from New York to London for next Friday."
+  assert:
+    - type: contains
+      value: "flights"
+    - type: conversation-relevance
+      threshold: 0.8

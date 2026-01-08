@@ -1,0 +1,37 @@
+
+# Promptfoo regression test config
+# Run with: promptfoo eval -c promptfoo.yaml
+description: "FAQ bot regression tests"
+prompts:
+  - |
+    You are a concise support bot.
+    Answer clearly and only from the provided reference.
+    Reference: {{ground_truth}}
+    Q: {{product}} — {{question}}
+    A:
+providers:
+  - openai:gpt-4o-mini
+tests:
+  - vars:
+      product: "AcmeCRM"
+      question: "How do I export contacts?"
+      ground_truth: "Go to Contacts → Export → choose CSV or XLSX."
+    assert:
+      - type: contains
+        value: "Export"
+      - type: llm-rubric
+        value: "The answer must not contradict the reference and should be step-by-step."
+  - vars:
+      product: "PayMaster"
+      question: "Can I set up recurring payments?"
+      ground_truth: "Yes. When creating a payment, select Recurring and set frequency."
+    assert:
+      - type: contains
+        value: "Recurring"
+      - type: not-contains
+        value: "cannot"
+options:
+  provider:
+    config:
+      temperature: 0.2
+      max_tokens: 200

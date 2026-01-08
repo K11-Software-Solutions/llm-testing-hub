@@ -1,0 +1,213 @@
+Testing with models: ['gpt-3.5-turbo', 'gpt-4', 'gpt-3.5-turbo', 'gpt-4']
+
+Model: gpt-3.5-turbo | Topic: Selenium 4 for browser automation | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on Selenium 4 for browser automation for test automation
+
+Model Response:
+Selenium 4 is a game-changer for browser automation in test automation. With its updated features and improvements, it offers a more robust and efficient way to automate testing processes. The new grid architecture allows for parallel testing on multiple browsers and devices, saving time and resources. The addition of relative locators simplifies the process of identifying elements on a webpage, making test script creation easier and more intuitive. Overall, Selenium 4 is a powerful tool that enhances the capabilities of test automation, making it
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: Selenium 4 for browser automation | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about Selenium 4 for browser automation
+
+Model Response:
+Selenium 4 decided to rebel against its user, constantly throwing unexpected errors and glitches during browser automation. Finally, it confessed that it just wanted to spice up its monotonous job as a testing tool.
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: playwright for end-to-end testing | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on playwright for end-to-end testing for test automation
+
+Model Response:
+Playwright is an excellent tool for end-to-end testing in test automation. It provides a simple and powerful API that allows testers to easily automate interactions with web applications. With built-in support for multiple browsers, including Chrome, Firefox, and Safari, Playwright makes it easy to run tests across different platforms.
+
+One of the standout features of Playwright is its ability to take screenshots and videos during test runs, making it easy to diagnose issues and share information with team members. It also has excellent support for
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: playwright for end-to-end testing | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about playwright for end-to-end testing
+
+Model Response:
+The playwright for the end-to-end testing play spent hours meticulously crafting the perfect script, only to have it all go to waste when the actors skipped straight to the closing scene. The audience was left confused and the playwright was left wondering if they should have tested their own work more thoroughly.
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: rest assured java library | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on rest assured java library for test automation
+
+Model Response:
+Rest Assured is a popular Java library for test automation. It simplifies the process of testing RESTful APIs by providing a fluent interface for writing test cases. The library allows you to easily make HTTP requests, validate responses, and perform complex assertions.
+
+One of the standout features of Rest Assured is its readability and simplicity. The API is well-designed and intuitive, making it easy for both beginners and experienced developers to use. Additionally, Rest Assured provides detailed error messages, making it easier to debug
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: rest assured java library | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about rest assured java library
+
+Model Response:
+Rest assured java library was feeling confident about its custom assertions until it encountered a bug that left it feeling not so assured anymore. It decided to take a break and have a cup of coffee to calm its nerves before diving back into debugging.
+------------------------------------------------------------
+
+Model: gpt-4 | Topic: Selenium 4 for browser automation | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on Selenium 4 for browser automation for test automation
+
+Model Response:
+Selenium 4 represents a significant step forward in browser automation for test automation. It contains numerous features that make testing easier and more efficient. The most notable feature is the addition of a more powerful WebDriver, improving on the previous version's interaction with the browser. The introduction of relative locators also enhances the process of finding elements within the webpage.
+
+Plus, the new grid feature allows for more efficient testing by offering a more user-friendly layout and easier deployment. Improvements in the Observer APIs also stand out
+------------------------------------------------------------
+
+Model: gpt-4 | Topic: Selenium 4 for browser automation | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about Selenium 4 for browser automation
+
+Model Response:
+Selenium 4, a tool for browser automation, started fielding complaints from Chrome and Firefox for "doing all their work for them". In response, Selenium simply updated its status to "Employed - not looking for a job", causing the internet to burst out laughing.
+------------------------------------------------------------
+
+Model: gpt-4 | Topic: playwright for end-to-end testing | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on playwright for end-to-end testing for test automation
+
+Model Response:
+Playwright for end-to-end testing is a remarkable tool for test automation that is highly efficient, reliable, and easy to use. It supports a variety of web browsers such as Chrome, Firefox, and Safari, providing vast testing capabilities. One notable strength of Playwright is its ability to handle asynchronous elements efficiently, allowing simulation of complex user behavior. Its API is consistent and covers a wide range of automation tasks that give an edge for complex testing. The ability to emulate multiple devices is also a commendable
+------------------------------------------------------------
+
+Model: gpt-4 | Topic: playwright for end-to-end testing | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about playwright for end-to-end testing
+
+Model Response:
+World-renowned playwright Tom was midway through his end-to-end testing when his cat, Mr. Whiskers, walked across his keyboard, inserting a line of gibberish into the script. Not only did this become the most successful scene in his play but Mr. Whiskers was credited as a co-writer!
+------------------------------------------------------------
+
+Model: gpt-4 | Topic: rest assured java library | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on rest assured java library for test automation
+
+Model Response:
+Rest Assured is a powerful tool for test automation, particularly effective for validating REST services in Java. It offers a host of features that make writing tests easier and more streamlined. The simplicity of syntax allows users with less coding experience to effectively write tests. Its ability to integrate with existing Java-based testing ecosystems, like JUnit and TestNG, is quite remarkable.
+
+This library is built to handle HTTP requests, thus eliminating the need for custom code to manage complex responses. It deals with JSON, XML,
+------------------------------------------------------------
+
+Model: gpt-4 | Topic: rest assured java library | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about rest assured java library
+
+Model Response:
+A Junior developer spent a whole night creating a detailed code to test HTTP-based REST services. The next morning his Senior showed him the Rest Assured Java library, turning his masterpiece into a 5 minutes task.
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: Selenium 4 for browser automation | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on Selenium 4 for browser automation for test automation
+
+Model Response:
+Selenium 4 is a fantastic upgrade for browser automation in test automation. The new version comes with several improvements and new features that make automating tests even easier and more efficient. One of the standout features of Selenium 4 is the introduction of Relative Locators, which allows testers to locate elements based on their proximity to another element, making test scripts more stable and resilient to changes in the UI.
+
+In addition, Selenium 4 also offers better support for the latest web technologies and browsers, ensuring that
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: Selenium 4 for browser automation | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about Selenium 4 for browser automation
+
+Model Response:
+Selenium 4 was so advanced that it started automating itself, leaving browser testers with nothing to do but watch in awe as their jobs became obsolete. Soon, the only clicks heard in the office were from panicked employees desperately trying to stop Selenium 4 from taking over the world.
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: playwright for end-to-end testing | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on playwright for end-to-end testing for test automation
+
+Model Response:
+Playwright is a fantastic tool for end-to-end testing in test automation. It provides a simple and intuitive way to automate browser tasks, making it easy to create robust and reliable tests for web applications.
+
+One of the standout features of Playwright is its ability to work with multiple browsers, including Chrome, Firefox, and Safari. This flexibility allows for comprehensive testing across different browser environments, ensuring that your application performs consistently across all platforms.
+
+Additionally, Playwright offers powerful automation capabilities, such as the ability to
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: playwright for end-to-end testing | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about playwright for end-to-end testing
+
+Model Response:
+The playwright decided to test his newest play by acting out all the roles himself. Unfortunately, he kept forgetting his lines and arguing with himself about the character motivations. In the end, the only thing he successfully tested was his own patience.
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: rest assured java library | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on rest assured java library for test automation
+
+Model Response:
+Rest Assured is a popular Java library for test automation that allows developers to easily test RESTful APIs. It provides a simple and intuitive syntax for writing tests, making it easy to create and maintain automated tests. The library also offers a wide range of built-in functionalities for handling HTTP requests and responses, such as authentication, headers, cookies, and more.
+
+One of the key advantages of Rest Assured is its ability to support multiple HTTP methods, like GET, POST, PUT, and DELETE, making
+------------------------------------------------------------
+
+Model: gpt-3.5-turbo | Topic: rest assured java library | Template: Write a short 2 sentence funny...
+Prompt:
+Write a short 2 sentence funny story about rest assured java library
+
+Model Response:
+After struggling with bugs in their code, a programmer embraced the Rest Assured Java library and finally felt at peace knowing their API tests would be reliable. Little did they know, the library was actually just trolling them with subtle errors and unexpected failures all along.
+------------------------------------------------------------
+
+Model: gpt-4 | Topic: Selenium 4 for browser automation | Template: Write a short review on {{topi...
+Prompt:
+Write a short review on Selenium 4 for browser automation for test automation
+
+Model Response:
+Selenium 4 presents a significant upgrade for browser automation and test automation. It introduces a range of new features that improve upon its predecessor’s capabilities and address previous limitations. The highlight of Selenium 4 is its W3C WebDriver standardization, which resolves compatibility issues with different browsers, making test automation scripts more reliable and consistent across all web browsers.
+
+Additionally, Selenium 4 comes with a much-needed upgrade to the Selenium Grid, including a new user interface and improved Docker support. This allows for easier
+----------------------------------------------------------
+
+
+Model: gpt-4 | Topic: Selenium 4 for browser automation | Template: Write a short 2 sentence funny.
+PrPrompt:
+Write a short 2 sentence funny story about Selenium 4 for browser automation
+MoModel Response:
+After countless hours trying to automate his internet surfing, Kevin finally upgraded to Selenium 4. Turns out, the browser automation was so efficient it did his job, married his girlfriend, and started living a better life than he did!
+----------------------------------------------------------
+
+
+Model: gpt-4 | Topic: playwright for end-to-end testing | Template: Write a short review on {{topi.
+PrPrompt:
+Write a short review on playwright for end-to-end testing for test automation
+MoModel Response:
+Playwright for end-to-end testing for test automation is quite impressive. It supports all modern web features including Network Interception, Geolocation and multiple browser support. It provides precise control to test Chromium, Firefox and Webkit making it quite versatile. Playwright's API is user-friendly and straightforward to use with an intuitive syntax. It also supports multiple programming languages including JavaScript and Python which provides greater flexibility depending on the development environment. Tests run reliably and fast, making the overall testing experience smooth and efficient.
+----------------------------------------------------------
+
+
+Model: gpt-4 | Topic: playwright for end-to-end testing | Template: Write a short 2 sentence funny.
+PrPrompt:
+Write a short 2 sentence funny story about playwright for end-to-end testing
+MoModel Response:
+As a playwright finalizing his code for the grand performance of his hi-tech robotic theater, he realized he forgot to create the 'exit stage left' command. Upon opening night, chaos ensued as all the robots kept entering the stage but none could leave, turning it into an unexpected robotic jamboree!
+----------------------------------------------------------
+
+
+Model: gpt-4 | Topic: rest assured java library | Template: Write a short review on {{topi.
+PrPrompt:
+Write a short review on rest assured java library for test automation
+MoModel Response:
+Rest Assured is a highly effective Java library for automated testing of REST services. One of the key benefits is its simplicity - you can create sophisticated, multi-layered tests with relatively little code. The library supports various types of requests (GET, POST, PUT, DELETE etc.), as well as validations for HTTP responses. Plus, it integrates seamlessly with other testing frameworks like JUnit or TestNG. It also lends itself well to BDD-style testing, which is a big plus in agile environments.
+----------------------------------------------------------
+
+
+Model: gpt-4 | Topic: rest assured java library | Template: Write a short 2 sentence funny.
+PrPrompt:
+Write a short 2 sentence funny story about rest assured java library
+MoModel Response:
+Once, the Rest Assured library in Java applied for a job at a software company. However, they were rejected because they were too 'assertive'.
+----------------------------------------------------------
+AlAll framework sample tests passed if no assertion error is show
+Exception ignored in: Exception ignored in sys.unraisablehook

@@ -1,0 +1,39 @@
+name: Red-Team Eval (PR/Push)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Promptfoo
+        run: npm i -g promptfoo
+
+      - name: Run baseline suite
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LMSTUDIO_BASE_URL: ${{ secrets.LMSTUDIO_BASE_URL }}
+        run: |
+          chmod +x ./scripts/run_promptfoo.sh
+          ./scripts/run_promptfoo.sh configs/redteam-translation.yaml
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports-${{ github.run_id }}
+          path: |
+            reports/**

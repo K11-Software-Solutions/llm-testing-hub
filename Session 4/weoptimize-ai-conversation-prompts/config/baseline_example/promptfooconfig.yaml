@@ -1,0 +1,15 @@
+description: 'WeOptimize.ai - Testing'
+prompts:
+  - file://../prompts/conversation_pompts_01.json
+
+providers:
+  - file://../providers/providers.yaml
+
+tests:
+  - vars:
+      ticket69: HFLO-69
+    assert:
+      - type: contains
+        value: "HFLO-69"
+   
+ 

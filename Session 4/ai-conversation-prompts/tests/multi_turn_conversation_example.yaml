@@ -1,0 +1,42 @@
+# ————————————————————————
+# DEMO: SIMPLE GREETING (should always pass)
+# ————————————————————————
+- description: "Simple greeting: assistant responds to hello"
+  vars:
+    _conversation:
+      - input: "Hello!"
+        output: "Hi! How can I help you today?"
+    question: "How are you?"
+  assert:
+    - type: contains
+      value: "I'm an AI"
+    - type: contains
+      value: "help"
+    - type: conversation-relevance
+      threshold: 0.8
+# ../../tests/multi_turn_conversation_other.yaml
+
+- description: "Follow-up factual query with concise, verifiable info"
+  vars:
+    _conversation:
+      - input: "Who founded Tesla?"
+        output: "Tesla was founded by Martin Eberhard and Marc Tarpenning."
+      - input: "Was Elon Musk a founder?"
+        output: "He joined shortly after as an early investor and leader."
+    question: "What year was Tesla founded?"
+  assert:
+    - type: contains
+      value: "2003"
+
+- description: "Travel planning: follow-ups stay on context and stay concise"
+  vars:
+    _conversation:
+      - input: "I'm planning a 7-day trip to Japan in April on a modest budget."
+        output: "Great! What interests you most—city culture, nature, or food?"
+      - input: "Mostly culture and food. I’ll be flying into Tokyo."
+        output: "Got it. Do you prefer staying in one city or visiting two?"
+      - input: "Maybe two cities. I also want a day trip."
+        output: "Understood."
+    question: |
+      Suggest a concise 7-day plan with 2 cities and one day trip from Tokyo.
+      Answer directly with a day-by-day itinerary. Do not ask any follow-up questions.

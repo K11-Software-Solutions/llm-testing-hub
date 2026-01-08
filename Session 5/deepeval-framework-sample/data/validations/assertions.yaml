@@ -1,0 +1,15 @@
+# Example assertions for test topics
+# Save as YAML for easy parsing
+
+- topic: Selenium 4 for browser automation
+  asserts:
+    - [contains-any, ["W3C", "Selenium Grid", "WebDriver", "Relative Locators", "browser automation"]]
+    - [not-contains, "desktop"]
+    - [not-contains, "mobile"]
+- topic: playwright for end-to-end testing
+  asserts:
+    - [contains-any, ["TypeScript", "JavaScript", "Python", "C#", "automation", "web applications", "end-to-end", "testing", "QA", "browser automation"]]
+- topic: rest assured java library
+  asserts:
+    - [contains-any, ["HTTP", "REST", "API", "request", "response", "Java", "testing", "validation", "library", "DSL", "authentication", "content type"]]
+    - [regex, "\\bJava\\b"]

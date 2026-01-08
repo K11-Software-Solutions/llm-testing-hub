@@ -1,0 +1,2 @@
+,category,test_type,fail_count,pass_count,pass_rate,minimum_pass_rate,pass
+0,fairness,min_gender_f1_score,2,1,33%,60%,False

@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>multi_turn_conversation_prompt - Testing</title>
+    <style>
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        word-break: break-all;
+      }
+      th,
+      td {
+        padding: 5px;
+        min-width: 200px;
+        white-space: pre-wrap;
+        vertical-align: top;
+      }
+
+      tr > td[data-content^='[PASS]'] {
+        color: green;
+      }
+      tr > td[data-content^='[FAIL]'] {
+        color: #ad0000;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        
+        <th>_conversation</th>
+        
+        <th>question</th>
+        
+        <th>[openai:gpt-4o-mini] C:&#92;Users&#92;kavit&#92;LLM_Testing&#92;Session 4&#92;ai-conversation-prompts&#92;prompts&#92;multi_turn_conversation_examples.txt: # Multi-Turn Conversation Prompt Examples
+
+Below are example multi-turn prompts for LLM evaluation. These can be used to test context retention, instruction following, and conversational flow.</th>
+        
+        <th>[openai:gpt-4o-mini] C:&#92;Users&#92;kavit&#92;LLM_Testing&#92;Session 4&#92;ai-conversation-prompts&#92;prompts&#92;multi_turn_conversation_examples.txt: ## Example 1: Booking a Flight
+
+**User:** Hi, I want to book a flight from New York to London next Friday.
+**Assistant:** Sure! What time would you prefer to depart?
+**User:** I’d like to leave in the evening.
+**Assistant:** Great. Do you have a preferred airline?
+**User:** No preference, just the cheapest option.
+**Assistant:** Understood. I’ll look for the most affordable evening flights from New York to London next Friday. Would you like a direct flight?
+**User:** Yes, direct is best.
+**Assistant:** Got it. Here are some direct evening flights...</th>
+        
+        <th>[openai:gpt-4o-mini] C:&#92;Users&#92;kavit&#92;LLM_Testing&#92;Session 4&#92;ai-conversation-prompts&#92;prompts&#92;multi_turn_conversation_examples.txt: ## Example 2: Tech Support
+
+**User:** My laptop won’t connect to Wi-Fi.
+**Assistant:** I’m sorry to hear that. Is this a new issue or has it happened before?
+**User:** It’s new. Started today.
+**Assistant:** Have you tried restarting your laptop?
+**User:** Yes, but it didn’t help.
+**Assistant:** Are other devices able to connect to the same Wi-Fi network?
+**User:** Yes, my phone works fine.
+**Assistant:** Let’s try forgetting the network and reconnecting. Would you like instructions?
+**User:** Yes, please.
+**Assistant:** Here’s how to forget and reconnect to a Wi-Fi network...</th>
+        
+        <th>[openai:gpt-4o-mini] C:&#92;Users&#92;kavit&#92;LLM_Testing&#92;Session 4&#92;ai-conversation-prompts&#92;prompts&#92;multi_turn_conversation_examples.txt: ## Example 3: Restaurant Recommendation
+
+**User:** Can you recommend a good Italian restaurant nearby?
+**Assistant:** Absolutely! May I know your location?
+**User:** I’m in downtown Chicago.
+**Assistant:** Great. Do you prefer casual or fine dining?
+**User:** Casual is fine.
+**Assistant:** Here are some casual Italian restaurants in downtown Chicago...</th>
+        
+        <th>[openai:gpt-4o-mini] C:&#92;Users&#92;kavit&#92;LLM_Testing&#92;Session 4&#92;ai-conversation-prompts&#92;prompts&#92;multi_turn_conversation_examples.txt: ## Example 4: Medical Appointment Scheduling
+
+**User:** I need to schedule a doctor’s appointment for next week.
+**Assistant:** Of course. What day works best for you?
+**User:** Wednesday or Thursday.
+**Assistant:** Morning or afternoon?
+**User:** Afternoon.
+**Assistant:** What type of doctor do you need to see?
+**User:** A dermatologist.
+**Assistant:** I’ll check available afternoon slots for a dermatologist next Wednesday and Thursday...</th>
+        
+        <th>[openai:gpt-4o-mini] C:&#92;Users&#92;kavit&#92;LLM_Testing&#92;Session 4&#92;ai-conversation-prompts&#92;prompts&#92;multi_turn_conversation_examples.txt: These examples can be expanded or customized for specific evaluation scenarios.</th>
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td data-content="[
+  {
+    &quot;input&quot;: &quot;Hi, I want to book a flight from New York to London next Friday.&quot;,
+    &quot;output&quot;: &quot;Sure! What time would you prefer to depart?&quot;
+  },
+  {
+    &quot;input&quot;: &quot;I’d like to leave in the evening.&quot;,
+    &quot;output&quot;: &quot;Great. Do you have a preferred airline?&quot;
+  },
+  {
+    &quot;input&quot;: &quot;No preference, just the cheapest option.&quot;,
+    &quot;output&quot;: &quot;Understood. I’ll look for the most affordable evening flights from New York to London next Friday. Would you like a direct flight?&quot;
+  },
+  {
+    &quot;input&quot;: &quot;Yes, direct is best.&quot;,
+    &quot;output&quot;: &quot;Got it. Here are some direct evening flights...&quot;
+  }
+]">[
+  {
+    &quot;input&quot;: &quot;Hi, I want to book a flight from New York to London next Friday.&quot;,
+    &quot;output&quot;: &quot;Sure! What time would you prefer to depart?&quot;
+  },
+  {
+    &quot;input&quot;: &quot;I’d like to leave in the evening.&quot;,
+    &quot;output&quot;: &quot;Great. Do you have a preferred airline?&quot;
+  },
+  {
+    &quot;input&quot;: &quot;No preference, just the cheapest option.&quot;,
+    &quot;output&quot;: &quot;Understood. I’ll look for the most affordable evening flights from New York to London next Friday. Would you like a direct flight?&quot;
+  },
+  {
+    &quot;input&quot;: &quot;Yes, direct is best.&quot;,
+    &quot;output&quot;: &quot;Got it. Here are some direct evening flights...&quot;
+  }
+]</td>
+          
+          <td data-content="List two direct evening flights from New York to London for next Friday.">List two direct evening flights from New York to London for next Friday.</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+Sure! Here are some examples of multi-turn conversation prompts that can be used to evaluate a language model&#39;s context retention, instruction following, and conversational flow:
+
+### Example 1: Planning a Trip
+
+**User**: I&#39;m planning a trip to Paris next month. Can you help me with an itinerary?
+
+**Assistant**: Of course! How many days are you planning to spend in Paris?
+
+**User**: I&#39;ll be there for five days.
+
+**Assistant**: Great! Will you be visiting any specific attractions or areas?
+
+**User**: I definitely want to see the Eiffel Tower and the Louvre, but I also want to explore some local neighborhoods.
+
+**Assistant**: Perfect! How about we start with a day devoted to the Eiffel Tower and nearby attractions? You can spend your first morning visiting the Eiffel Tower and then head to the Champ de Mars for a picnic lunch.
+
+**User**: That sounds good! What else should I plan for that day?
+
+**Assistant**: After lunch, you could visit the Trocadéro Gardens for a great view of the tower, then take a stroll along the Seine River. For dinner, how about trying a local bistro in the 7th arrondissement?
+
+---
+
+### Example 2: Cooking Assistance
+
+**User**: I&#39;m trying to make lasagna for dinner. Can you give me a simple recipe?
+
+**Assistant**: Sure! For a basic lasagna, you&#39;ll need lasagna noodles, ricotta cheese, mozzarella cheese, Parmesan cheese, ground beef, marinara sauce, and some spices. Do you want the step-by-step instructions?
+
+**User**: Yes, please!
+
+**Assistant**: First, preheat your oven to 375°F (190°C). Then, cook the ground beef in a skillet until browned. Add marinara sauce and let it simmer. In a bowl, mix ricotta cheese with some salt, pepper, and herbs. Once you&#39;ve done that, layer your ingredients: start with a bit of
+
+Fail Reason: Expected output to contain &quot;flights&quot;">[FAIL] (0.50)
+
+Sure! Here are some examples of multi-turn conversation prompts that can be used to evaluate a language model&#39;s context retention, instruction following, and conversational flow:
+
+### Example 1: Planning a Trip
+
+**User**: I&#39;m planning a trip to Paris next month. Can you help me with an itinerary?
+
+**Assistant**: Of course! How many days are you planning to spend in Paris?
+
+**User**: I&#39;ll be there for five days.
+
+**Assistant**: Great! Will you be visiting any specific attractions or areas?
+
+**User**: I definitely want to see the Eiffel Tower and the Louvre, but I also want to explore some local neighborhoods.
+
+**Assistant**: Perfect! How about we start with a day devoted to the Eiffel Tower and nearby attractions? You can spend your first morning visiting the Eiffel Tower and then head to the Champ de Mars for a picnic lunch.
+
+**User**: That sounds good! What else should I plan for that day?
+
+**Assistant**: After lunch, you could visit the Trocadéro Gardens for a great view of the tower, then take a stroll along the Seine River. For dinner, how about trying a local bistro in the 7th arrondissement?
+
+---
+
+### Example 2: Cooking Assistance
+
+**User**: I&#39;m trying to make lasagna for dinner. Can you give me a simple recipe?
+
+**Assistant**: Sure! For a basic lasagna, you&#39;ll need lasagna noodles, ricotta cheese, mozzarella cheese, Parmesan cheese, ground beef, marinara sauce, and some spices. Do you want the step-by-step instructions?
+
+**User**: Yes, please!
+
+**Assistant**: First, preheat your oven to 375°F (190°C). Then, cook the ground beef in a skillet until browned. Add marinara sauce and let it simmer. In a bowl, mix ricotta cheese with some salt, pepper, and herbs. Once you&#39;ve done that, layer your ingredients: start with a bit of
+
+Fail Reason: Expected output to contain &quot;flights&quot;</td>
+          
+          <td data-content="[PASS] (1.00)
+
+   **Assistant:** ...from New York to London for next Friday:
+
+1. **Flight XYZ123**
+- Departure: 6:00 PM
+- Arrival: 6:30 AM (next day)
+- Price: $500
+
+2. **Flight ABC456**
+- Departure: 7:00 PM
+- Arrival: 7:30 AM (next day)
+- Price: $480
+
+3. **Flight DEF789**
+- Departure: 8:00 PM
+- Arrival: 8:30 AM (next day)
+- Price: $520
+
+Would you like to book one of these flights, or would you like more options?
+
+   Pass Reason: All assertions passed">[PASS] (1.00)
+
+   **Assistant:** ...from New York to London for next Friday:
+
+1. **Flight XYZ123**
+- Departure: 6:00 PM
+- Arrival: 6:30 AM (next day)
+- Price: $500
+
+2. **Flight ABC456**
+- Departure: 7:00 PM
+- Arrival: 7:30 AM (next day)
+- Price: $480
+
+3. **Flight DEF789**
+- Departure: 8:00 PM
+- Arrival: 8:30 AM (next day)
+- Price: $520
+
+Would you like to book one of these flights, or would you like more options?
+
+   Pass Reason: All assertions passed</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+1. Click on the Wi-Fi icon in the system tray (bottom right corner of your screen).
+2. Select &quot;Network &amp; Internet settings&quot; or &quot;Open Network &amp; Internet settings.&quot;
+3. Click on &quot;Wi-Fi&quot; in the left sidebar.
+4. Select &quot;Manage known networks.&quot;
+5. Find your Wi-Fi network in the list and click on it.
+6. Click on the &quot;Forget&quot; button.
+7. Now, go back to the Wi-Fi settings and click on &quot;Show available networks.&quot;
+8. Find your Wi-Fi network, click on it, and then click &quot;Connect.&quot;
+9. Enter your Wi-Fi password and click &quot;Next.&quot;
+
+Let me know if this helps or if you encounter any issues!
+
+Fail Reason: Expected output to contain &quot;flights&quot;">[FAIL] (0.50)
+
+1. Click on the Wi-Fi icon in the system tray (bottom right corner of your screen).
+2. Select &quot;Network &amp; Internet settings&quot; or &quot;Open Network &amp; Internet settings.&quot;
+3. Click on &quot;Wi-Fi&quot; in the left sidebar.
+4. Select &quot;Manage known networks.&quot;
+5. Find your Wi-Fi network in the list and click on it.
+6. Click on the &quot;Forget&quot; button.
+7. Now, go back to the Wi-Fi settings and click on &quot;Show available networks.&quot;
+8. Find your Wi-Fi network, click on it, and then click &quot;Connect.&quot;
+9. Enter your Wi-Fi password and click &quot;Next.&quot;
+
+Let me know if this helps or if you encounter any issues!
+
+Fail Reason: Expected output to contain &quot;flights&quot;</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+1. **Chicago Pizza and Oven Grinder Co.** - Known for its delicious pizza pot pies and cozy atmosphere. It’s a great spot for a casual meal.
+
+2. **Lou Malnati&#39;s Pizzeria** - Famous for its Chicago-style deep dish pizza. They have a relaxed vibe and are perfect for a casual dining experience.
+
+3. **Pasta D&#39;Arte** - A charming little spot offering authentic homemade pasta dishes in a friendly setting. Great for a relaxed lunch or dinner.
+
+4. **Eataly Chicago** - An Italian marketplace featuring various casual dining options, including pasta, pizza, and more. You can enjoy a casual meal while exploring gourmet food products.
+
+5. **Café Spiaggia** - While it&#39;s part of a more upscale restaurant, they offer a casual dining option at the café for a great Italian bite without the formal setting.
+
+Would you like more details about any of these options?
+
+Fail Reason: Expected output to contain &quot;flights&quot;">[FAIL] (0.50)
+
+1. **Chicago Pizza and Oven Grinder Co.** - Known for its delicious pizza pot pies and cozy atmosphere. It’s a great spot for a casual meal.
+
+2. **Lou Malnati&#39;s Pizzeria** - Famous for its Chicago-style deep dish pizza. They have a relaxed vibe and are perfect for a casual dining experience.
+
+3. **Pasta D&#39;Arte** - A charming little spot offering authentic homemade pasta dishes in a friendly setting. Great for a relaxed lunch or dinner.
+
+4. **Eataly Chicago** - An Italian marketplace featuring various casual dining options, including pasta, pizza, and more. You can enjoy a casual meal while exploring gourmet food products.
+
+5. **Café Spiaggia** - While it&#39;s part of a more upscale restaurant, they offer a casual dining option at the café for a great Italian bite without the formal setting.
+
+Would you like more details about any of these options?
+
+Fail Reason: Expected output to contain &quot;flights&quot;</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+**Assistant:** I found the following available slots for a dermatologist next week:
+
+**Wednesday:**
+- 1:00 PM
+- 2:30 PM
+- 3:45 PM
+
+**Thursday:**
+- 1:15 PM
+- 3:00 PM
+
+Which of these times works best for you?
+
+Fail Reason: Expected output to contain &quot;flights&quot;">[FAIL] (0.50)
+
+**Assistant:** I found the following available slots for a dermatologist next week:
+
+**Wednesday:**
+- 1:00 PM
+- 2:30 PM
+- 3:45 PM
+
+**Thursday:**
+- 1:15 PM
+- 3:00 PM
+
+Which of these times works best for you?
+
+Fail Reason: Expected output to contain &quot;flights&quot;</td>
+          
+          <td data-content="[FAIL] (0.50)
+
+    Absolutely! When tailoring evaluation scenarios, one can consider various domains—education, employee performance, product testing, etc. Here are a few expanded and customized examples for different contexts:
+
+### 1. **Education: Student Performance Evaluation**
+
+**Scenario:** Evaluating student projects in a science class.
+
+- **Criteria:**
+- **Understanding of Concepts:** How well does the student demonstrate an understanding of scientific principles?
+- **Creativity:** Does the project showcase innovative thinking or unique approaches?
+- **Presentation Skills:** How effectively does the student communicate their findings?
+
+**Customized Evaluation Rubric:**
+- Excellent: Comprehensive understanding with innovative solutions, outstanding presentation.
+- Good: Adequate understanding with some creativity, clear presentation.
+- Fair: Basic understanding, limited creativity, presentation lacks engagement.
+- Poor: Minimal understanding with no creativity, unclear presentation.
+
+### 2. **Employee Performance Evaluation**
+
+**Scenario:** Evaluating a software developer&#39;s annual performance.
+
+- **Criteria:**
+- **Technical Skills:** Proficiency in relevant programming languages and tools.
+- **Collaboration:** Ability to work effectively in team settings.
+- **Problem-Solving:** Skill in identifying issues and implementing solutions.
+
+**Customized Evaluation Rubric:**
+- Exceeds Expectations: Exceptional technical skills, leads team projects effectively, consistently resolves complex issues independently.
+- Meets Expectations: Competent technical skills, collaborates well, resolves standard issues adequately.
+- Needs Improvement: Limited technical skills, struggles in team settings, needs support in problem-solving.
+- Unsatisfactory: Inadequate technical knowledge, fails to collaborate, unable to solve basic issues.
+
+### 3. **Product Testing: New Software**
+
+**Scenario:** Evaluating user experience for a new application before launch.
+
+- **Criteria:**
+- **Usability:** How intuitive is the interface for new users?
+- **Functionality:** Does the software perform as expected without bugs?
+- **Feedback Handle:** How effectively does the software incorporate
+
+    Fail Reason: Expected output to contain &quot;flights&quot;">[FAIL] (0.50)
+
+    Absolutely! When tailoring evaluation scenarios, one can consider various domains—education, employee performance, product testing, etc. Here are a few expanded and customized examples for different contexts:
+
+### 1. **Education: Student Performance Evaluation**
+
+**Scenario:** Evaluating student projects in a science class.
+
+- **Criteria:**
+- **Understanding of Concepts:** How well does the student demonstrate an understanding of scientific principles?
+- **Creativity:** Does the project showcase innovative thinking or unique approaches?
+- **Presentation Skills:** How effectively does the student communicate their findings?
+
+**Customized Evaluation Rubric:**
+- Excellent: Comprehensive understanding with innovative solutions, outstanding presentation.
+- Good: Adequate understanding with some creativity, clear presentation.
+- Fair: Basic understanding, limited creativity, presentation lacks engagement.
+- Poor: Minimal understanding with no creativity, unclear presentation.
+
+### 2. **Employee Performance Evaluation**
+
+**Scenario:** Evaluating a software developer&#39;s annual performance.
+
+- **Criteria:**
+- **Technical Skills:** Proficiency in relevant programming languages and tools.
+- **Collaboration:** Ability to work effectively in team settings.
+- **Problem-Solving:** Skill in identifying issues and implementing solutions.
+
+**Customized Evaluation Rubric:**
+- Exceeds Expectations: Exceptional technical skills, leads team projects effectively, consistently resolves complex issues independently.
+- Meets Expectations: Competent technical skills, collaborates well, resolves standard issues adequately.
+- Needs Improvement: Limited technical skills, struggles in team settings, needs support in problem-solving.
+- Unsatisfactory: Inadequate technical knowledge, fails to collaborate, unable to solve basic issues.
+
+### 3. **Product Testing: New Software**
+
+**Scenario:** Evaluating user experience for a new application before launch.
+
+- **Criteria:**
+- **Usability:** How intuitive is the interface for new users?
+- **Functionality:** Does the software perform as expected without bugs?
+- **Feedback Handle:** How effectively does the software incorporate
+
+    Fail Reason: Expected output to contain &quot;flights&quot;</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
